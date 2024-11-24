@@ -7081,6 +7081,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"demo@workspace:apps/demo":
+  version: 0.0.0-use.local
+  resolution: "demo@workspace:apps/demo"
+  languageName: unknown
+  linkType: soft
+
 "depd@npm:2.0.0, depd@npm:^2.0.0, depd@npm:~2.0.0":
   version: 2.0.0
   resolution: "depd@npm:2.0.0"
@@ -13937,6 +13943,12 @@ __metadata:
   checksum: 10c0/8dab7e7800316387fd8569870b4b668cfcecf95ac551e369ea799bbcbfb63fb0365366d4b59f64822c9f7904d8c5afcfaf5a6124a4b08783e558cd25f299a6b4
   languageName: node
   linkType: hard
+
+"screenplay@workspace:apps/screenplay":
+  version: 0.0.0-use.local
+  resolution: "screenplay@workspace:apps/screenplay"
+  languageName: unknown
+  linkType: soft
 
 "secure-compare@npm:3.0.1":
   version: 3.0.1
