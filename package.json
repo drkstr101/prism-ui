@@ -19,6 +19,7 @@
     "@nx/vite": "20.1.3",
     "@nx/web": "20.1.3",
     "@nx/workspace": "20.1.3",
+    "@nxkit/style-dictionary": "^6.0.0",
     "@playwright/test": "^1.49.0",
     "@swc-node/register": "~1.10.9",
     "@swc/cli": "~0.5.1",
@@ -48,6 +49,8 @@
     "postcss": "8.4.49",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "~0.4.1",
+    "style-dictionary": "^3.9.2",
+    "style-dictionary-sets": "^2.3.0",
     "stylelint": "^16.10.0",
     "stylelint-config-standard": "^36.0.1",
     "stylelint-config-tailwindcss": "^0.0.7",
@@ -62,7 +65,8 @@
   },
   "workspaces": [
     "apps/demo",
-    "apps/screenplay"
+    "apps/screenplay",
+    "libs/design-tokens"
   ],
   "packageManager": "yarn@4.5.2"
 }
