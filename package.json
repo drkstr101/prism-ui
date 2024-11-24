@@ -4,7 +4,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "nx run demo:serve --port 4200"
+    "check": "nx affected -t lint stylelint test build",
+    "start": "nx run demo:serve --port 4200",
+    "e2e": "nx run screenplay:e2e"
   },
   "dependencies": {
     "@adobe/react-spectrum": "^3.38.0",
