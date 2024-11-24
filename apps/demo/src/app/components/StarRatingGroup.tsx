@@ -1,4 +1,3 @@
-import { any } from 'prop-types';
 import { useState } from 'react';
 import { Group, Label, Radio, RadioGroup, RadioGroupProps } from 'react-aria-components';
 
@@ -17,18 +16,18 @@ export function StarRatingGroup({
   label = 'Rating',
   ...other
 }: StarRatingGroupProps) {
-  let allRatings = Array.from(Array(ratingCount).keys()).map((i) => String(i + 1));
+  const allRatings = Array.from(Array(ratingCount).keys()).map((i) => String(i + 1));
 
   // Track which rating is hovered at the group level.
-  let [hoveredRating, setHoveredRating] = useState<string | undefined>(undefined);
+  const [hoveredRating, setHoveredRating] = useState<string | undefined>(undefined);
 
-  let onPointerOver = (e: any) => {
+  const onPointerOver = (e: any) => {
     if (e.target.dataset?.rating) {
       setHoveredRating(e.target.dataset.rating);
     }
   };
 
-  let onPointerOut = () => {
+  const onPointerOut = () => {
     setHoveredRating(undefined);
   };
 
@@ -76,12 +75,12 @@ export function StarRating({
   isEmphasized?: boolean;
   hoveredRating: string | undefined;
 }) {
-  let ratingNum = Number(rating);
-  let selectedNum = Number(selected);
-  let isFilled =
+  const ratingNum = Number(rating);
+  const selectedNum = Number(selected);
+  const isFilled =
     hoveredRating !== undefined ? ratingNum <= Number(hoveredRating) : ratingNum <= selectedNum;
-  let fillColor = isEmphasized ? 'fill-accent-800' : 'fill-gray-700';
-  let bgColor = isEmphasized ? 'bg-accent-800' : 'bg-gray-700';
+  const fillColor = isEmphasized ? 'fill-accent-800' : 'fill-gray-700';
+  const bgColor = isEmphasized ? 'bg-accent-800' : 'bg-gray-700';
 
   return (
     <Radio aria-label={`${rating} stars`} value={rating}>

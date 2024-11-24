@@ -1,4 +1,4 @@
-import { Radio, RadioGroup, Label } from 'react-aria-components';
+import { Label, Radio, RadioGroup } from 'react-aria-components';
 
 interface OptionProps {
   side: 'start' | 'end';

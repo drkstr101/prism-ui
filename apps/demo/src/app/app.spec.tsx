@@ -10,6 +10,6 @@ describe('App', () => {
 
   it('should have a page title', () => {
     const { getByText } = render(<App />);
-    expect(getByText(/Design System Demo/i)).toBeTruthy();
+    expect(getByText(/Prism UI/i)).toBeTruthy();
   });
 });

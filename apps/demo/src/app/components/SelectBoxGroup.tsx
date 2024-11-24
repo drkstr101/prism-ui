@@ -1,5 +1,5 @@
 import type { RadioGroupProps } from 'react-aria-components';
-import { Label, Radio, RadioGroup, Text } from 'react-aria-components';
+import { Label, Radio, RadioGroup } from 'react-aria-components';
 
 interface SelectBoxGroupProps extends Omit<RadioGroupProps, 'children'> {
   children?: React.ReactNode;
