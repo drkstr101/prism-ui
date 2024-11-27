@@ -1,9 +1,6 @@
 import { LitElement, css, html } from 'lit';
 import { property } from 'lit/decorators.js';
 
-// import '@spectrum-web-components/theme/sp-theme.js';
-// import '@spectrum-web-components/theme/src/themes.js';
-
 import model, { type AppState } from './prism-app.model';
 
 // @customElement('prism-app')
