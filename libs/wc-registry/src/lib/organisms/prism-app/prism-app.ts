@@ -1,12 +1,12 @@
 import { LitElement, css, html } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { property } from 'lit/decorators.js';
 
-import '@spectrum-web-components/theme/sp-theme.js';
-import '@spectrum-web-components/theme/src/themes.js';
+// import '@spectrum-web-components/theme/sp-theme.js';
+// import '@spectrum-web-components/theme/src/themes.js';
 
-import AppModel, { AppState } from './prism-app.model';
+import model, { type AppState } from './prism-app.model';
 
-@customElement('prism-app')
+// @customElement('prism-app')
 export default class PrismApp extends LitElement {
   // Define scoped styles right with your component, in plain CSS
   static override styles = css`
@@ -25,7 +25,7 @@ export default class PrismApp extends LitElement {
   `;
 
   // Declare reactive properties
-  @property({ type: Object }) appState: AppState = AppModel.DEFAULT_STATE;
+  @property({ type: Object }) appState: AppState = model.DEFAULT_STATE;
 
   // Render the UI as a function of component state
   override render() {
