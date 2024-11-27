@@ -1,6 +1,6 @@
 # Add files here to ignore them from prettier formatting
-/.nx/cache
-/.nx/workspace-data
 /.yarn
+/build
 /coverage
 /dist
+/node_modules

@@ -1,0 +1,11 @@
+{
+  "name": "@apsphysics/prism-ui.organisms.prism-app",
+  "version": "0.0.1",
+  "dependencies": {
+    "lit": "^3.2.1",
+    "@spectrum-web-components/theme": "^1.0.1"
+  },
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "typings": "./index.d.ts"
+}
