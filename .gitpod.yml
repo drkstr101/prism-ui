@@ -16,7 +16,7 @@ tasks:
   - name: Setup
     init: |
       yarn install && yarn playwright install --with-deps
-      (cd examples/rails-7; bin/setup)
+      # bundle install --gem-file examples/people2/Gemfile
       gp sync-done setup
     openMode: split-left
   - name: Start
