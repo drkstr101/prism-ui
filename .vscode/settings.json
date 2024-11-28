@@ -27,6 +27,13 @@
     "**/.git/subtree-cache/**": true,
     "**/node_modules/*/**": true
   },
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "npm.packageManager": "yarn",
@@ -41,5 +48,5 @@
   "stylelint.validate": ["css", "scss", "postcss"],
   "stylelint.packageManager": "yarn",
   "tailwindCSS.lint.invalidConfigPath": "ignore",
-  "cSpell.words": ["recma", "rehype", "shiki"]
+  "cSpell.words": ["recma", "rehype", "shiki", "yarnpkg"]
 }
