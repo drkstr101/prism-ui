@@ -125,7 +125,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@apsphysics/prism-ui.design.tokens@workspace:libs/design-tokens"
   dependencies:
-    style-dictionary: "npm:^3.7.1"
+    style-dictionary: "npm:^3.9.2"
   languageName: unknown
   linkType: soft
 
@@ -3745,11 +3745,11 @@ __metadata:
     "@swc/helpers": "npm:~0.5.15"
     "@testing-library/react": "npm:15.0.7"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:18.19.65"
+    "@types/node": "npm:18.19.66"
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
-    "@vitejs/plugin-react": "npm:^4.3.3"
-    "@vitest/coverage-v8": "npm:^1.0.4"
+    "@vitejs/plugin-react": "npm:^4.3.4"
+    "@vitest/coverage-v8": "npm:^1.6.0"
     "@vitest/ui": "npm:^1.6.0"
     autoprefixer: "npm:10.4.20"
     babel-jest: "npm:^29.7.0"
@@ -3785,10 +3785,10 @@ __metadata:
     ts-node: "npm:10.9.2"
     tslib: "npm:^2.8.1"
     typescript: "npm:~5.7.2"
-    typescript-eslint: "npm:^8.15.0"
-    verdaccio: "npm:^5.0.4"
+    typescript-eslint: "npm:^8.16.0"
+    verdaccio: "npm:^5.33.0"
     vite: "npm:^5.4.11"
-    vite-plugin-dts: "npm:~3.8.1"
+    vite-plugin-dts: "npm:~3.8.3"
     vitest: "npm:^1.6.0"
   languageName: unknown
   linkType: soft
@@ -7785,12 +7785,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.19.65":
-  version: 18.19.65
-  resolution: "@types/node@npm:18.19.65"
+"@types/node@npm:18.19.66":
+  version: 18.19.66
+  resolution: "@types/node@npm:18.19.66"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10c0/9c093f13749dccd16a3e9cd17080db057d1e94cb5205a871d2818ad51ec19d7d392a7c12a11661c6a6f4404cbd85b19d09ab6c564a4763cab2ff5bb0e198617d
+  checksum: 10c0/d6a31a3f03c4e2c62cdd319ab7f6ff66038d7408158304cfe0a852c9b0247893f5173bafffa0a090bcc279a6015a7c8399a51bf8e44f781edd4d41c43f274edb
   languageName: node
   linkType: hard
 
@@ -8294,7 +8294,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-react@npm:^4.3.3":
+"@vitejs/plugin-react@npm:^4.3.4":
   version: 4.3.4
   resolution: "@vitejs/plugin-react@npm:4.3.4"
   dependencies:
@@ -8309,7 +8309,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/coverage-v8@npm:^1.0.4":
+"@vitest/coverage-v8@npm:^1.6.0":
   version: 1.6.0
   resolution: "@vitest/coverage-v8@npm:1.6.0"
   dependencies:
@@ -19928,7 +19928,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"style-dictionary@npm:^3.7.1, style-dictionary@npm:^3.9.2":
+"style-dictionary@npm:^3.9.2":
   version: 3.9.2
   resolution: "style-dictionary@npm:3.9.2"
   dependencies:
@@ -20868,7 +20868,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.15.0":
+"typescript-eslint@npm:^8.16.0":
   version: 8.16.0
   resolution: "typescript-eslint@npm:8.16.0"
   dependencies:
@@ -21261,7 +21261,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"verdaccio@npm:^5.0.4":
+"verdaccio@npm:^5.33.0":
   version: 5.33.0
   resolution: "verdaccio@npm:5.33.0"
   dependencies:
@@ -21335,7 +21335,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-dts@npm:~3.8.1":
+"vite-plugin-dts@npm:~3.8.3":
   version: 3.8.3
   resolution: "vite-plugin-dts@npm:3.8.3"
   dependencies:

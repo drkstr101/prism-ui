@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "packageManager": "yarn@4.5.2",
   "dependencies": {
-    "style-dictionary": "^3.7.1"
+    "style-dictionary": "^3.9.2",
+    "style-dictionary-sets": "^2.3.0"
   }
 }
