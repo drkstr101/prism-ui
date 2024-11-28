@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "module": "commonjs",
+    "types": ["jest", "node", "@nx/react/typings/cssmodule.d.ts", "@nx/react/typings/image.d.ts"]
+  },
+  "include": [
+    "jest.config.ts",
+    "app/frontend/**/*.test.ts",
+    "app/frontend/**/*.spec.ts",
+    "app/frontend/**/*.test.tsx",
+    "app/frontend/**/*.spec.tsx",
+    "app/frontend/**/*.test.js",
+    "app/frontend/**/*.spec.js",
+    "app/frontend/**/*.test.jsx",
+    "app/frontend/**/*.spec.jsx",
+    "app/frontend/**/*.d.ts"
+  ]
+}
