@@ -10,7 +10,7 @@ export function registerComponent(
 ) {
   if (customElements.get(name)) return;
 
-  console.log(`Registered custom element: ${name}`);
+  console.log(`Registered: ${name}`);
   customElements.define(name, component, opts);
 }
 

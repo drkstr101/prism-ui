@@ -26,11 +26,8 @@ export default class PrismApp extends LitElement {
 
   // Render the UI as a function of component state
   override render() {
-    const { message } = this.appState.status;
     return html`<article>
-      <header><h1>Hello, World!</h1></header>
-      <main><slot /></main>
-      <footer>${message}</footer>
+      <slot></slot>
     </article>`;
   }
 }

@@ -1,5 +1,5 @@
-import PrismApp from './lib/prism-app';
-import { registerComponent } from './lib/wc-registry';
+export { default as PrismApp } from './lib/prism-app';
+export { registerComponent } from './lib/wc-registry';
 
 // immediately register top-level entrypoint
-registerComponent('prism-app', PrismApp);
+// registerComponent('prism-app', PrismApp);
