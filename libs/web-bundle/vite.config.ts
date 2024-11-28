@@ -7,7 +7,7 @@ import dts from 'vite-plugin-dts';
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/libs/wc-registry',
+  cacheDir: '../../node_modules/.vite/libs/web-bundle',
   plugins: [
     nxViteTsPaths(),
     nxCopyAssetsPlugin(['*.md']),
@@ -20,7 +20,7 @@ export default defineConfig({
   // Configuration for building your library.
   // See: https://vitejs.dev/guide/build.html#library-mode
   build: {
-    outDir: '../../dist/libs/wc-registry',
+    outDir: '../../dist/libs/web-bundle',
     emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {
@@ -29,7 +29,7 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points.
       entry: 'src/index.ts',
-      name: 'wc-registry',
+      name: 'web-bundle',
       fileName: 'index',
       // Change this to the formats you want to support.
       // Don't forget to update your package.json as well.
@@ -47,7 +47,7 @@ export default defineConfig({
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     reporters: ['default'],
     coverage: {
-      reportsDirectory: '../../coverage/libs/wc-registry',
+      reportsDirectory: '../../coverage/libs/web-bundle',
       provider: 'v8',
     },
   },

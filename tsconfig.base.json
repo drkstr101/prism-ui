@@ -16,7 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@apsphysics/prism-ui.wc.registry": ["libs/wc-registry/src/index.ts"]
+      "@apsphysics/prism-ui.web.bundle": ["libs/web-bundle/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

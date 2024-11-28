@@ -1,7 +1,7 @@
 {
-  "name": "wc-registry",
+  "name": "web-bundle",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/wc-registry/src",
+  "sourceRoot": "libs/web-bundle/src",
   "projectType": "library",
   "release": {
     "version": {
