@@ -3,7 +3,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "moduleResolution": "bundler",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -16,6 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@apsphysics/prism-ui.theme.styles": ["libs/theme-styles/src/index.ts"],
       "@apsphysics/prism-ui.web.bundle": ["libs/web-bundle/src/index.ts"]
     }
   },

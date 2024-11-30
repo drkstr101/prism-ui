@@ -5,6 +5,10 @@
     "dbaeumer.vscode-eslint",
     "ms-playwright.playwright",
     "firsttris.vscode-jest-runner",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "naumovs.color-highlight",
+    "editorconfig.editorconfig"
   ]
 }

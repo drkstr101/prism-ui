@@ -17,6 +17,13 @@
       "options": {
         "packageRoot": "dist/{projectRoot}"
       }
+    },
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/web-bundle/**/*.css", "libs/web-bundle/**/*.scss"]
+      }
     }
   }
 }
