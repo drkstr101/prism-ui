@@ -85,6 +85,7 @@
   "workspaces": [
     "apps/demo",
     "apps/screenplay",
+    "examples/hello",
     "libs/design-tokens"
   ],
   "packageManager": "yarn@4.5.2",
