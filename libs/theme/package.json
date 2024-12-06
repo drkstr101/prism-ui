@@ -1,5 +1,5 @@
 {
-  "name": "@apsphysics/prism-ui.theme.styles",
+  "name": "@apsphysics/prism-ui.theme",
   "version": "0.0.1",
   "main": "./index.js",
   "types": "./index.d.ts",

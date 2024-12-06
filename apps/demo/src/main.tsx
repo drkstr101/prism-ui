@@ -1,4 +1,4 @@
-import { PrismApp } from '@apsphysics/prism-ui.web.bundle';
+import { PrismApp } from '@apsphysics/prism-ui.organisms.prism-app';
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 

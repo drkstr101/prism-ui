@@ -1,0 +1,17 @@
+{
+  "name": "theme",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/theme/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/theme/**/*.css", "libs/theme/**/*.scss"],
+        "formatter": "verbose"
+      }
+    }
+  }
+}

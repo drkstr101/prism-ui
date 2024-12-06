@@ -16,8 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@apsphysics/prism-ui.theme.styles": ["libs/theme-styles/src/index.ts"],
-      "@apsphysics/prism-ui.web.bundle": ["libs/web-bundle/src/index.ts"]
+      "@apsphysics/prism-ui.organisms.prism-app": ["libs/organisms/prism-app/src/index.ts"],
+      "@apsphysics/prism-ui.theme": ["libs/theme/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

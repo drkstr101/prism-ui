@@ -1,5 +1,5 @@
 {
-  "name": "@apsphysics/prism-ui.web.bundle",
+  "name": "@apsphysics/prism-ui.organisms.prism-app",
   "version": "0.0.1",
   "dependencies": {
     "lit": "^3.2.1"

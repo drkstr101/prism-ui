@@ -1,7 +1,7 @@
 {
-  "name": "web-bundle",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/web-bundle/src",
+  "name": "prism-app",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/organisms/prism-app/src",
   "projectType": "library",
   "release": {
     "version": {
@@ -22,7 +22,10 @@
       "executor": "nx-stylelint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/web-bundle/**/*.css", "libs/web-bundle/**/*.scss"]
+        "lintFilePatterns": [
+          "libs/organisms/prism-app/**/*.css",
+          "libs/organisms/prism-app/**/*.scss"
+        ]
       }
     }
   }
