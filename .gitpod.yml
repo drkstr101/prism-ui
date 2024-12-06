@@ -16,7 +16,7 @@ tasks:
   - name: Setup
     init: |
       yarn install && yarn playwright install --with-deps
-      yarn nx run-many --target setup
+      # yarn nx run-many --target setup
       gp sync-done setup
     openMode: split-left
   - name: Start

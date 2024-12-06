@@ -47,6 +47,5 @@
   "stylelint.enable": true,
   "stylelint.validate": ["css", "scss", "postcss"],
   "stylelint.packageManager": "yarn",
-  "tailwindCSS.lint.invalidConfigPath": "ignore",
   "cSpell.words": ["recma", "rehype", "shiki", "yarnpkg"]
 }

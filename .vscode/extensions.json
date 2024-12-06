@@ -1,14 +1,18 @@
 {
   "recommendations": [
-    "nrwl.angular-console",
-    "esbenp.prettier-vscode",
+    "castwide.solargraph",
     "dbaeumer.vscode-eslint",
-    "ms-playwright.playwright",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
-    "stylelint.vscode-stylelint",
     "formulahendry.auto-close-tag",
     "formulahendry.auto-rename-tag",
+    "lorankloeze.ruby-rubocop-revived",
+    "ms-playwright.playwright",
     "naumovs.color-highlight",
-    "editorconfig.editorconfig"
+    "nrwl.angular-console",
+    "stylelint.vscode-stylelint",
+    "csstools.postcss",
+    "vunguyentuan.vscode-css-variables"
   ]
 }

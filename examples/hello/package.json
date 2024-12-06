@@ -8,7 +8,7 @@
     "setup": "bin/setup",
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets",
     "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify",
-    "serve": "bin/foreman start"
+    "serve": "bin/dev"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",

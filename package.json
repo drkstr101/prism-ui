@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "nx run-many --target=build --parallel",
-    "check": "nx affected -t lint stylelint test build",
+    "check": "nx run-many -t lint stylelint test build",
     "start": "nx run demo:serve --port 4200",
     "e2e": "nx run screenplay:e2e"
   },
