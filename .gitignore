@@ -51,3 +51,7 @@ vite.config.*.timestamp*
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Next.js
+.next
+out
