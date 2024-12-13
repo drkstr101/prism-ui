@@ -1,8 +1,8 @@
 ---
-title: CacheAdvance.flush()
+title: PrismUI.flush()
 nextjs:
   metadata:
-    title: CacheAdvance.flush()
+    title: PrismUI.flush()
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

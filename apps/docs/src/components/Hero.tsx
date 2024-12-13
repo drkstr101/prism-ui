@@ -10,16 +10,26 @@ import blurCyanImage from '../images/blur-cyan.png';
 import blurIndigoImage from '../images/blur-indigo.png';
 
 const codeLanguage = 'javascript';
-const code = `export default {
-  strategy: 'predictive',
-  engine: {
-    cpus: 12,
-    backups: ['./storage/cache.wtf'],
-  },
-}`;
+const code = `/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    './app/**/*.erb',
+    './app/**/*.haml',
+    './app/helpers/**/*.rb',
+    './app/frontend/**/*.*'
+  ],
+  theme: { extend: {} },
+  presets: [require('./tailwind.presets.js')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('tailwindcss-animate'),
+    require('tailwindcss-react-aria-components'),
+  ],
+};`;
 
 const tabs = [
-  { name: 'cache-advance.config.js', isActive: true },
+  { name: 'tailwind.config.js', isActive: true },
   { name: 'package.json', isActive: false },
 ];
 

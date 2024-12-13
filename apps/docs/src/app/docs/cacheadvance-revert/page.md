@@ -1,8 +1,8 @@
 ---
-title: CacheAdvance.revert()
+title: PrismUI.revert()
 nextjs:
   metadata:
-    title: CacheAdvance.revert()
+    title: PrismUI.revert()
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

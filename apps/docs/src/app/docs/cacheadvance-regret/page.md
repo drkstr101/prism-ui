@@ -1,8 +1,8 @@
 ---
-title: CacheAdvance.regret()
+title: PrismUI.regret()
 nextjs:
   metadata:
-    title: CacheAdvance.regret()
+    title: PrismUI.regret()
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

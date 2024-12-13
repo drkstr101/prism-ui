@@ -1,8 +1,8 @@
 ---
-title: CacheAdvance.predict()
+title: PrismUI.predict()
 nextjs:
   metadata:
-    title: CacheAdvance.predict()
+    title: PrismUI.predict()
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

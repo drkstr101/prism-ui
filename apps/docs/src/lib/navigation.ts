@@ -39,10 +39,10 @@ export const navigation = [
   {
     title: 'API reference',
     links: [
-      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
+      { title: 'PrismUI.predict()', href: '/docs/cacheadvance-predict' },
+      { title: 'PrismUI.flush()', href: '/docs/cacheadvance-flush' },
+      { title: 'PrismUI.revert()', href: '/docs/cacheadvance-revert' },
+      { title: 'PrismUI.regret()', href: '/docs/cacheadvance-regret' },
     ],
   },
   {
