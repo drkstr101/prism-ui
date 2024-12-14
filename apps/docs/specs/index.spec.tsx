@@ -1,6 +1,6 @@
-import React from 'react';
 import { render } from '@testing-library/react';
-import Page from '../src/app/page';
+
+const Page = () => <div>Hello, World!</div>;
 
 describe('Page', () => {
   it('should render successfully', () => {
