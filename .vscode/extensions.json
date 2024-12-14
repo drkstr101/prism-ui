@@ -1,6 +1,8 @@
 {
   "recommendations": [
+    "bung87.rails",
     "castwide.solargraph",
+    "csstools.postcss",
     "dbaeumer.vscode-eslint",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
@@ -12,7 +14,6 @@
     "naumovs.color-highlight",
     "nrwl.angular-console",
     "stylelint.vscode-stylelint",
-    "csstools.postcss",
     "vunguyentuan.vscode-css-variables"
   ]
 }
