@@ -1,9 +1,9 @@
 ---
-title: Compile-time caching
+title: Color system
 nextjs:
   metadata:
-    title: Compile-time caching
-    description: Quidem magni aut exercitationem maxime rerum eos.
+    title: Color system
+    description: Prism UI uses the relationships between colors and their properties to create a scalable foundation for color in the design system.
 ---
 
 Quasi sapiente voluptates aut minima non doloribus similique quisquam. In quo expedita ipsum nostrum corrupti incidunt. Et aut eligendi ea perferendis.

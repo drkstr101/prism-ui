@@ -1,9 +1,9 @@
 ---
-title: Writing plugins
+title: Typography system
 nextjs:
   metadata:
-    title: Writing plugins
-    description: Quidem magni aut exercitationem maxime rerum eos.
+    title: Typography system
+    description: Typography is an important part of a design system that brings consistency across applications. Good typography rules help present content clearly and efficiently.
 ---
 
 Quasi sapiente voluptates aut minima non doloribus similique quisquam. In quo expedita ipsum nostrum corrupti incidunt. Et aut eligendi ea perferendis.

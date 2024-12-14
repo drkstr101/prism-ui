@@ -1,8 +1,8 @@
 ---
-title: Architecture guide
+title: React integration guide
 nextjs:
   metadata:
-    title: Architecture guide
+    title: React integration guide
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

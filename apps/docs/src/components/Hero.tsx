@@ -19,13 +19,7 @@ export default {
     './app/frontend/**/*.*'
   ],
   theme: { extend: {} },
-  presets: [require('./tailwind.presets.js')],
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('tailwindcss-animate'),
-    require('tailwindcss-react-aria-components'),
-  ],
+  presets: [require('@apsphysics/prism-ui.tailwind-presets')]
 };`;
 
 const tabs = [
@@ -60,11 +54,11 @@ export function Hero() {
             />
             <div className="relative">
               <p className="font-display inline bg-gradient-to-r from-indigo-200 via-blue-400 to-indigo-200 bg-clip-text text-5xl tracking-tight text-transparent">
-                Never miss the cache again.
+                Prism UI
               </p>
               <p className="mt-3 text-2xl tracking-tight text-gray-400">
-                Cache every single thing your app could ever do ahead of time, so your code never
-                even has to run at all.
+                Components and tools to help developers work more efficiently, and make
+                applications more cohesive.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="/">Get started</Button>

@@ -1,9 +1,9 @@
 ---
-title: PrismUI.flush()
+title: Project setup
 nextjs:
   metadata:
-    title: PrismUI.flush()
-    description: Quidem magni aut exercitationem maxime rerum eos.
+    title: Project setup
+    description: Setup a Rails application for Prism UI
 ---
 
 Quasi sapiente voluptates aut minima non doloribus similique quisquam. In quo expedita ipsum nostrum corrupti incidunt. Et aut eligendi ea perferendis.

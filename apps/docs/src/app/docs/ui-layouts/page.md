@@ -1,8 +1,8 @@
 ---
-title: Understanding caching
+title: Layout components
 nextjs:
   metadata:
-    title: Understanding caching
+    title: Layout components
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

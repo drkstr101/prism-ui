@@ -3,54 +3,41 @@ export const navigation = [
     title: 'Introduction',
     links: [
       { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
+      { title: 'Project setup', href: '/docs/project-setup' },
     ],
   },
   {
     title: 'Core concepts',
     links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
+      { title: 'Design tokens', href: '/docs/design-tokens' },
       {
-        title: 'Predicting user behavior',
-        href: '/docs/predicting-user-behavior',
+        title: 'Color system',
+        href: '/docs/color-system',
       },
-      { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
+      { title: 'Size and spacing', href: '/docs/size-and-spacing' },
       {
-        title: 'Introduction to string theory',
-        href: '/docs/introduction-to-string-theory',
+        title: 'Typography system',
+        href: '/docs/typography-system',
       },
-      { title: 'The butterfly effect', href: '/docs/the-butterfly-effect' },
+      { title: 'Responsive layout', href: '/docs/responsive-layout' },
     ],
   },
   {
     title: 'Advanced guides',
     links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      { title: 'Testing', href: '/docs/testing' },
-      { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
-      {
-        title: 'Predictive data generation',
-        href: '/docs/predictive-data-generation',
-      },
+      { title: '(P)react', href: '/docs/preact-guide' },
+      { title: 'Web components', href: '/docs/webcomponents-guide' },
+      { title: 'Typescript', href: '/docs/typescript-guide' },
+      { title: 'Testing', href: '/docs/testing-guide' },
     ],
   },
   {
-    title: 'API reference',
+    title: 'Component reference',
     links: [
-      { title: 'PrismUI.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'PrismUI.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'PrismUI.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'PrismUI.regret()', href: '/docs/cacheadvance-regret' },
-    ],
-  },
-  {
-    title: 'Contributing',
-    links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
+      { title: 'Atoms', href: '/docs/ui-atoms' },
+      { title: 'Molecules', href: '/docs/ui-molecules' },
+      { title: 'Organisms', href: '/docs/ui-organisms' },
+      { title: 'Layouts', href: '/docs/ui-layouts' },
     ],
   },
 ];

@@ -1,8 +1,8 @@
 ---
-title: Neuralink integration
+title: Responsive layout
 nextjs:
   metadata:
-    title: Neuralink integration
+    title: Responsive layout
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

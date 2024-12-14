@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     default: 'PrismUI - Never miss the cache again.',
   },
   description:
-    'Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.',
+    'Prism UI provides components and tools to help developers work more efficiently, and to make applications more cohesive.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

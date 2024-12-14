@@ -24,7 +24,7 @@ Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit per
 
 Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.
 
-### Installing dependencies
+### Setup Vite
 
 Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
 
@@ -38,12 +38,12 @@ Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit per
 This is what a disclaimer message looks like. You might want to include inline `code` in it. Or maybe you’ll want to include a [link](/) in it. I don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
 {% /callout %}
 
-### Configuring the library
+### Configure TailwindCSS
 
 Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
 
 ```js
-// cache-advance.config.js
+// tailwind.config.js
 export default {
   strategy: 'predictive',
   engine: {

@@ -1,8 +1,8 @@
 ---
-title: PrismUI.predict()
+title: Organism components
 nextjs:
   metadata:
-    title: PrismUI.predict()
+    title: Organism components
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

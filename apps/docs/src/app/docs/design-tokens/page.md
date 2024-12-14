@@ -1,9 +1,9 @@
 ---
-title: Temporal paradoxes
+title: Design tokens
 nextjs:
   metadata:
-    title: Temporal paradoxes
-    description: Quidem magni aut exercitationem maxime rerum eos.
+    title: Design tokens
+    description: Design tokens are design decisions, translated into data. They act as a “source of truth” to help ensure that applications feel unified and cohesive.
 ---
 
 Quasi sapiente voluptates aut minima non doloribus similique quisquam. In quo expedita ipsum nostrum corrupti incidunt. Et aut eligendi ea perferendis.

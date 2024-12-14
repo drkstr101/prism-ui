@@ -1,8 +1,8 @@
 ---
-title: Introdution to string theory
+title: Typescript guide
 nextjs:
   metadata:
-    title: Introdution to string theory
+    title: Typescript guide
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

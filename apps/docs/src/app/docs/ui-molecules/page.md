@@ -1,8 +1,8 @@
 ---
-title: Installation
+title: Molecule components
 nextjs:
   metadata:
-    title: Installation
+    title: Molecule components
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

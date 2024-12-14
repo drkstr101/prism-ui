@@ -1,8 +1,8 @@
 ---
-title: Predicting user behavior
+title: Atom components
 nextjs:
   metadata:
-    title: Predicting user behavior
+    title: Atom components
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

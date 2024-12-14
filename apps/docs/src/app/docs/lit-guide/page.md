@@ -1,8 +1,8 @@
 ---
-title: PrismUI.revert()
+title: Web components (Lit)
 nextjs:
   metadata:
-    title: PrismUI.revert()
+    title: Web components (Lit)
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 
