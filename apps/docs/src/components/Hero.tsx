@@ -57,7 +57,7 @@ export function Hero() {
                 Prism UI
               </p>
               <p className="mt-3 text-2xl tracking-tight text-gray-400">
-                Components and tools to help developers work more efficiently, and make
+                Components and tools to help developers work more efficiently, and
                 applications more cohesive.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
