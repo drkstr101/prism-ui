@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     default: 'Prism UI - Docs',
   },
   description:
-    'Prism UI provides components and tools to help developers work more efficiently, and applications more cohesive.',
+    'Components and tools to help developers work more efficiently, and make applications more cohesive.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
