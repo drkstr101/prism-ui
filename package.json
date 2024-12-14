@@ -7,7 +7,7 @@
     "build": "nx run-many --target=build --parallel",
     "check": "nx run-many -t lint stylelint test build",
     "start": "nx run docs:dev --port 4200",
-    "e2e": "nx run screenplay:e2e"
+    "e2e": "nx run screenplay:e2e --skip-nx-cache"
   },
   "dependencies": {
     "@adobe/react-spectrum": "^3.38.0",
