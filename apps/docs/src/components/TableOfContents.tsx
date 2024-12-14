@@ -1,8 +1,8 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
-import Link from 'next/link';
 import clsx from 'clsx';
+import Link from 'next/link';
+import { useCallback, useEffect, useState } from 'react';
 
 import { Section, Subsection } from '../lib/sections';
 
@@ -64,7 +64,7 @@ export function TableOfContents({ tableOfContents }: { tableOfContents: Array<Se
           <>
             <h2
               id="on-this-page-title"
-              className="font-display text-sm font-medium text-slate-900 dark:text-white"
+              className="font-display text-sm font-medium text-gray-900 dark:text-white"
             >
               On this page
             </h2>
@@ -76,8 +76,8 @@ export function TableOfContents({ tableOfContents }: { tableOfContents: Array<Se
                       href={`#${section.id}`}
                       className={clsx(
                         isActive(section)
-                          ? 'text-sky-500'
-                          : 'font-normal text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300'
+                          ? 'text-blue-500'
+                          : 'font-normal text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
                       )}
                     >
                       {section.title}
@@ -86,7 +86,7 @@ export function TableOfContents({ tableOfContents }: { tableOfContents: Array<Se
                   {section.children.length > 0 && (
                     <ol
                       role="list"
-                      className="mt-2 space-y-3 pl-5 text-slate-500 dark:text-slate-400"
+                      className="mt-2 space-y-3 pl-5 text-gray-500 dark:text-gray-400"
                     >
                       {section.children.map((subSection) => (
                         <li key={subSection.id}>
@@ -94,8 +94,8 @@ export function TableOfContents({ tableOfContents }: { tableOfContents: Array<Se
                             href={`#${subSection.id}`}
                             className={
                               isActive(subSection)
-                                ? 'text-sky-500'
-                                : 'hover:text-slate-600 dark:hover:text-slate-300'
+                                ? 'text-blue-500'
+                                : 'hover:text-gray-600 dark:hover:text-gray-300'
                             }
                           >
                             {subSection.title}

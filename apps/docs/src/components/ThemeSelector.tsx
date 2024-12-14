@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
-import { useTheme } from 'next-themes';
 import { Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react';
 import clsx from 'clsx';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 const themes = [
   { name: 'Light', value: 'light', icon: LightIcon },
@@ -61,43 +61,43 @@ export function ThemeSelector(props: React.ComponentPropsWithoutRef<typeof Listb
     <Listbox as="div" value={theme} onChange={setTheme} {...props}>
       <Label className="sr-only">Theme</Label>
       <ListboxButton
-        className="flex h-6 w-6 items-center justify-center rounded-lg shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5"
+        className="flex h-6 w-6 items-center justify-center rounded-lg shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-gray-700 dark:ring-inset dark:ring-white/5"
         aria-label="Theme"
       >
         <LightIcon
           className={clsx(
             'h-4 w-4 dark:hidden',
-            theme === 'system' ? 'fill-slate-400' : 'fill-sky-400'
+            theme === 'system' ? 'fill-gray-400' : 'fill-blue-400'
           )}
         />
         <DarkIcon
           className={clsx(
             'hidden h-4 w-4 dark:block',
-            theme === 'system' ? 'fill-slate-400' : 'fill-sky-400'
+            theme === 'system' ? 'fill-gray-400' : 'fill-blue-400'
           )}
         />
       </ListboxButton>
-      <ListboxOptions className="absolute left-1/2 top-full mt-3 w-36 -translate-x-1/2 space-y-1 rounded-xl bg-white p-3 text-sm font-medium shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-slate-800 dark:ring-white/5">
+      <ListboxOptions className="absolute left-1/2 top-full mt-3 w-36 -translate-x-1/2 space-y-1 rounded-xl bg-white p-3 text-sm font-medium shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-gray-800 dark:ring-white/5">
         {themes.map((theme) => (
           <ListboxOption
             key={theme.value}
             value={theme.value}
             className={({ focus, selected }) =>
               clsx('flex cursor-pointer select-none items-center rounded-[0.625rem] p-1', {
-                'text-sky-500': selected,
-                'text-slate-900 dark:text-white': focus && !selected,
-                'text-slate-700 dark:text-slate-400': !focus && !selected,
-                'bg-slate-100 dark:bg-slate-900/40': focus,
+                'text-blue-500': selected,
+                'text-gray-900 dark:text-white': focus && !selected,
+                'text-gray-700 dark:text-gray-400': !focus && !selected,
+                'bg-gray-100 dark:bg-gray-900/40': focus,
               })
             }
           >
             {({ selected }) => (
               <>
-                <div className="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5">
+                <div className="rounded-md bg-white p-1 shadow ring-1 ring-gray-900/5 dark:bg-gray-700 dark:ring-inset dark:ring-white/5">
                   <theme.icon
                     className={clsx(
                       'h-4 w-4',
-                      selected ? 'fill-sky-400 dark:fill-sky-400' : 'fill-slate-400'
+                      selected ? 'fill-blue-400 dark:fill-blue-400' : 'fill-gray-400'
                     )}
                   />
                 </div>

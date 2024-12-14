@@ -1,5 +1,5 @@
-import { useId } from 'react';
 import clsx from 'clsx';
+import { useId } from 'react';
 
 import { InstallationIcon } from './icons/InstallationIcon';
 import { LightbulbIcon } from './icons/LightbulbIcon';
@@ -18,7 +18,7 @@ const icons = {
 };
 
 const iconStyles = {
-  blue: '[--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]',
+  blue: '[--icon-foreground:theme(colors.gray.900)] [--icon-background:theme(colors.white)]',
   amber:
     '[--icon-foreground:theme(colors.amber.900)] [--icon-background:theme(colors.amber.100)]',
 };
