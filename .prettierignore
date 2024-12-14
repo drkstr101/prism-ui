@@ -8,3 +8,6 @@
 
 /.nx/cache
 /.nx/workspace-data
+
+/examples/hello/**/*.*
+!/examples/hello/app/frontend/**/*.*
