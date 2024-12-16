@@ -47,5 +47,14 @@
   "stylelint.enable": true,
   "stylelint.validate": ["css", "scss", "postcss"],
   "stylelint.packageManager": "yarn",
-  "cSpell.words": ["recma", "rehype", "shiki", "yarnpkg"]
+  "cSpell.words": [
+    "haml",
+    "htmlbeautifier",
+    "recma",
+    "rehype",
+    "rubocop",
+    "shiki",
+    "solargraph",
+    "yarnpkg"
+  ]
 }
