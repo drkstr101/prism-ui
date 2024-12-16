@@ -1,0 +1,45 @@
+{
+  "name": "hello",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "examples/hello",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "pg_start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pg_start"
+      }
+    },
+    "setup": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "examples/hello",
+        "command": "bin/setup --skip-server"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["setup"],
+      "options": {
+        "cwd": "examples/hello",
+        "command": "bin/vite build"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["setup"],
+      "options": {
+        "cwd": "examples/hello",
+        "command": "bin/dev"
+      }
+    },
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["examples/hello/app/frontend/**/*.css", "examples/hello/app/frontend/**/*.scss"]
+      }
+    }
+  }
+}
