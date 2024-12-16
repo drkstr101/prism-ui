@@ -2,54 +2,84 @@
 title: Getting started
 ---
 
-Learn how to get PrismUI set up in your project in under thirty minutes or it's free. {% .lead %}
-
 {% quick-links %}
 
-{% quick-link title="Installation" icon="installation" href="/" description="Step-by-step guides to setting up your system and installing the library." /%}
+{% quick-link title="Quick start" icon="installation" href="/" description="Learn how to get PrismUI set up in your project in under thirty minutes or it's free." /%}
 
-{% quick-link title="Architecture guide" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
+{% quick-link title="Core concepts" icon="presets" href="/docs/design-tokens" description="Learn the fundamentals and basic design theory." /%}
 
-{% quick-link title="Plugins" icon="plugins" href="/" description="Extend the library with third-party plugins or write your own." /%}
+{% quick-link title="Advanced guides" icon="plugins" href="/docs/preact-guide" description="Setup additional frameworks and tooling for your project." /%}
 
-{% quick-link title="API reference" icon="theming" href="/" description="Learn to easily customize and modify your app's visual design to fit your brand." /%}
+{% quick-link title="Component reference" icon="theming" href="/" description="Browse available components and copy design snippets." /%}
 
 {% /quick-links %}
-
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste.
 
 ---
 
 ## Quick start
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.
+Follow these steps to get up and running quickly with Prism UI in your Rails application.
 
 ### Setup Vite
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
+Add the `vite_rails` gem and run the vite installer.
 
 ```shell
-npm install @tailwindlabs/cache-advance
+bin/bundle add vite_rails
+bin/bundle exec vite install --package-manager yarn
 ```
 
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
+If your application was already configured to bundle JavaScript we will need to update the default entry point to point to `app/frontend`. Edit the newly created `config/vite.json` and change the `sourceCodeDir` value to `app/frontend`.
 
-{% callout type="warning" title="Oh no! Something bad happened!" %}
-This is what a disclaimer message looks like. You might want to include inline `code` in it. Or maybe you’ll want to include a [link](/) in it. I don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
+```jsonc
+// config/vite.json
+{
+  "all": {
+    "sourceCodeDir": "app/frontend",
+    "watchAdditionalPaths": []
+  },
+  "development": {
+    "autoBuild": true,
+    "publicOutputDir": "vite-dev",
+    "port": 3036
+  },
+  "test": {
+    "autoBuild": true,
+    "publicOutputDir": "vite-test",
+    "port": 3037
+  }
+}
+```
+
+{% callout type="warning" title="Relocate entrypoints" %}
+
+Be sure to relocate the entrypoints directory to this new location.
+
 {% /callout %}
 
-### Configure TailwindCSS
+Example:
+
+```shell
+mkdir app/frontend
+mv app/javascript/entrypoints app/frontend
+```
+
+### Configure Tailwind
 
 Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
 
 ```js
 // tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 export default {
-  strategy: 'predictive',
-  engine: {
-    cpus: 12,
-    backups: ['./storage/cache.wtf'],
-  },
+  content: [
+    './app/**/*.erb',
+    './app/**/*.haml',
+    './app/helpers/**/*.rb',
+    './app/frontend/**/*.*',
+  ],
+  theme: { extend: {} },
+  presets: [require('@apsphysics/prism-ui.tailwind-presets')],
 };
 ```
 
