@@ -169,6 +169,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@apsphysics/prism-ui.tailwind-presets@workspace:libs/tailwind-presets":
+  version: 0.0.0-use.local
+  resolution: "@apsphysics/prism-ui.tailwind-presets@workspace:libs/tailwind-presets"
+  languageName: unknown
+  linkType: soft
+
 "@apsphysics/prism-ui.theme@workspace:libs/theme":
   version: 0.0.0-use.local
   resolution: "@apsphysics/prism-ui.theme@workspace:libs/theme"

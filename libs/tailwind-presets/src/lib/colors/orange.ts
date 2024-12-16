@@ -1,0 +1,16 @@
+export default {
+  100: 'var(--prism-orange-100)',
+  200: 'var(--prism-orange-200)',
+  300: 'var(--prism-orange-300)',
+  400: 'var(--prism-orange-400)',
+  500: 'var(--prism-orange-500)',
+  600: 'var(--prism-orange-600)',
+  700: 'var(--prism-orange-700)',
+  800: 'var(--prism-orange-800)',
+  900: 'var(--prism-orange-900)',
+  1000: 'var(--prism-orange-1000)',
+  1100: 'var(--prism-orange-1100)',
+  1200: 'var(--prism-orange-1200)',
+  1300: 'var(--prism-orange-1300)',
+  1400: 'var(--prism-orange-1400)',
+};

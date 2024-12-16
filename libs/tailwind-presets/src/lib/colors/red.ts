@@ -1,0 +1,16 @@
+export default {
+  100: 'var(--prism-red-100)',
+  200: 'var(--prism-red-200)',
+  300: 'var(--prism-red-300)',
+  400: 'var(--prism-red-400)',
+  500: 'var(--prism-red-500)',
+  600: 'var(--prism-red-600)',
+  700: 'var(--prism-red-700)',
+  800: 'var(--prism-red-800)',
+  900: 'var(--prism-red-900)',
+  1000: 'var(--prism-red-1000)',
+  1100: 'var(--prism-red-1100)',
+  1200: 'var(--prism-red-1200)',
+  1300: 'var(--prism-red-1300)',
+  1400: 'var(--prism-red-1400)',
+};

@@ -112,6 +112,7 @@
     "examples/hello",
     "libs/design-tokens",
     "libs/organisms/prism-app",
+    "libs/tailwind-presets",
     "libs/theme"
   ],
   "packageManager": "yarn@4.5.3",
