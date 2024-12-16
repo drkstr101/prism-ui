@@ -122,11 +122,14 @@ function LoadingIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 function HighlightQuery({ text, query }: { text: string; query: string }) {
   return (
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-expect-error
     <Highlighter
       highlightClassName="group-aria-selected:underline bg-transparent text-blue-600 dark:text-blue-400"
       searchWords={[query]}
       autoEscape={true}
       textToHighlight={text}
+
     />
   );
 }
