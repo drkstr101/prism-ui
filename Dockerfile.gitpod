@@ -70,6 +70,9 @@ SHELL ["/usr/bin/bash", "-c"]
 # Create alias for nx binary
 RUN printf 'alias nx=node_modules/.bin/nx' >> ~/.bashrc
 
+# Install gems
+RUN gem install rails rubocop solargraph htmlbeautifier
+
 # ARG _truffle_version=truffleruby-24.1.1
 # ARG _ruby_version=ruby-3.2.6
 # RUN printf "rvm_gems_path=/home/gitpod/.rvm\n" > ~/.rvmrc \
