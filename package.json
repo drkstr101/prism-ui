@@ -114,7 +114,7 @@
     "libs/organisms/prism-app",
     "libs/theme"
   ],
-  "packageManager": "yarn@4.5.2",
+  "packageManager": "yarn@4.5.3",
   "nx": {
     "includedScripts": []
   }
