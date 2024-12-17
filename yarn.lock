@@ -173,6 +173,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@apsphysics/prism-ui.tailwind-presets@workspace:libs/tailwind-presets"
   dependencies:
+    "@tailwindcss/typography": "npm:^0.5.15"
     tailwindcss: "npm:^3.4.16"
     tailwindcss-animate: "npm:^1.0.7"
     tailwindcss-react-aria-components: "npm:^1.2.0"
