@@ -39,7 +39,7 @@ export function StarRatingGroup({
     >
       {({ state }) => (
         <>
-          <Label className="mb-200 text-xl font-semibold">{label}</Label>
+          <Label className="mb-200 text-xl font-bold">{label}</Label>
           <Group data-name="star-rating-group" className="group focus-visible:ring">
             <div
               data-name="star-rating-group"

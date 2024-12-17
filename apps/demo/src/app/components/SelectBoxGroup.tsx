@@ -9,7 +9,7 @@ interface SelectBoxGroupProps extends Omit<RadioGroupProps, 'children'> {
 export function SelectBoxGroup({ label, children, ...props }: SelectBoxGroupProps) {
   return (
     <RadioGroup className="flex flex-col space-y-2 text-center" {...props}>
-      <Label className="mb-200 text-xl font-semibold">{label}</Label>
+      <Label className="mb-200 text-xl font-bold">{label}</Label>
       <div className="flex justify-center">{children}</div>
     </RadioGroup>
   );
@@ -44,7 +44,7 @@ export function SelectBox({ name, icon, description }: SelectBoxProps) {
             </div>
           )}
           {icon && <div className="text-gray-500">{icon}</div>}
-          <div className="font-semibold">{name}</div>
+          <div className="font-bold">{name}</div>
           {description && <div className="text-sm">{description}</div>}
         </div>
       )}

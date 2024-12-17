@@ -19,7 +19,7 @@ export function Prose<T extends React.ElementType = 'div'>({
         // lead
         'prose-lead:text-gray-500 dark:prose-lead:text-gray-400',
         // links
-        'prose-a:font-semibold dark:prose-a:text-blue-400',
+        'prose-a:font-bold dark:prose-a:text-blue-400',
         // link underline
         'prose-a:no-underline prose-a:shadow-[inset_0_-2px_0_0_var(--tw-prose-background,#fff),inset_0_calc(-1*(var(--tw-prose-underline-size,4px)+2px))_0_0_var(--tw-prose-underline,theme(colors.blue.300))] hover:prose-a:[--tw-prose-underline-size:6px] dark:prose-a:shadow-[inset_0_calc(-1*var(--tw-prose-underline-size,2px))_0_0_var(--tw-prose-underline,theme(colors.blue.800))] dark:hover:prose-a:[--tw-prose-underline-size:6px] dark:[--tw-prose-background:theme(colors.gray.900)]',
         // pre

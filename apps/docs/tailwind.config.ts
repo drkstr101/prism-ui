@@ -1,5 +1,4 @@
 import { createGlobPatternsForDependencies } from '@nx/react/tailwind';
-import typographyPlugin from '@tailwindcss/typography';
 import { join } from 'path';
 import { type Config } from 'tailwindcss';
 
@@ -10,24 +9,11 @@ export default {
   ],
   darkMode: 'selector',
   theme: {
-    fontSize: {
-      xs: ['0.75rem', { lineHeight: '1rem' }],
-      sm: ['0.875rem', { lineHeight: '1.5rem' }],
-      base: ['1rem', { lineHeight: '2rem' }],
-      lg: ['1.125rem', { lineHeight: '1.75rem' }],
-      xl: ['1.25rem', { lineHeight: '2rem' }],
-      '2xl': ['1.5rem', { lineHeight: '2.5rem' }],
-      '3xl': ['2rem', { lineHeight: '2.5rem' }],
-      '4xl': ['2.5rem', { lineHeight: '3rem' }],
-      '5xl': ['3rem', { lineHeight: '3.5rem' }],
-      '6xl': ['3.75rem', { lineHeight: '1' }],
-      '7xl': ['4.5rem', { lineHeight: '1' }],
-      '8xl': ['6rem', { lineHeight: '1' }],
-      '9xl': ['8rem', { lineHeight: '1' }],
-    },
     extend: {
       fontFamily: {
-        sans: 'var(--font-inter)',
+        sans: 'var(--spectrum-sans-serif-font-family)',
+        serif: 'var(--spectrum-serif-font-family)',
+        code: 'var(--spectrum-code-font-family)',
         display: ['var(--font-lexend)', { fontFeatureSettings: '"ss01"' }],
       },
       maxWidth: {
@@ -35,5 +21,5 @@ export default {
       },
     },
   },
-  plugins: [typographyPlugin],
+  presets: [require('../../tailwind-workspace-presets.js')],
 } satisfies Config;

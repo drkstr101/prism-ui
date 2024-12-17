@@ -1,0 +1,19 @@
+@import url('tailwindcss/components.css');
+@import url('components/link/index.css');
+@import url('components/typography/index.css');
+
+@layer components {
+  .prism-logo {
+    /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+    background-image: url('@eop_rails_internal/eop_theme_internal/prism_navbar.gif');
+    background-repeat: no-repeat;
+    background-size: 180px 30px;
+    height: 30px;
+    width: 180px;
+  }
+}

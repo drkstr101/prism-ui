@@ -22,7 +22,7 @@ function Option({ side, value, children }: OptionProps) {
 export function PlanSwitcher() {
   return (
     <RadioGroup defaultValue="annual" className="m-auto flex flex-col space-y-10 text-center">
-      <Label className="mb-200 text-xl font-semibold">Plan Switcher</Label>
+      <Label className="mb-200 text-xl font-bold">Plan Switcher</Label>
       <div className="relative m-auto flex w-[400px] justify-evenly">
         <Option aria-label="Own label" side="start" value="annual">
           Annual
