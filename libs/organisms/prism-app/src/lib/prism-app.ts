@@ -1,9 +1,9 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators.js';
+import { customElement, property } from 'lit/decorators.js';
 
 import model, { type AppState } from './prism-app.model';
 
-// @customElement('prism-app')
+@customElement('prism-app')
 export default class PrismApp extends LitElement {
   // Define scoped styles right with your component, in plain CSS
   static override styles = css`
