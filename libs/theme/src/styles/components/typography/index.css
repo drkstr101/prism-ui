@@ -17,7 +17,6 @@
 @import url('./themes/external.css');
 
 /* Typography - Default */
-/* stylelint-disable selector-class-pattern -- @todo update this in a future breaking change to :root or .typography */
 .prism {
   --spectrum-font-family-ar: myriad-arabic, adobe-clean, 'Source Sans Pro', -apple-system,
     blinkmacsystemfont, 'Segoe UI', roboto, ubuntu, 'Trebuchet MS', 'Lucida Grande', sans-serif;
@@ -39,7 +38,6 @@
     font-family: var(--spectrum-font-family-he);
   }
 }
-/* stylelint-enable selector-class-pattern */
 
 /* Typography - Heading */
 

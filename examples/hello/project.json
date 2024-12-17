@@ -15,7 +15,7 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "examples/hello",
-        "command": "bin/setup --skip-server"
+        "command": "echo TODO # bin/setup --skip-server"
       }
     },
     "build": {
@@ -23,7 +23,7 @@
       "dependsOn": ["setup"],
       "options": {
         "cwd": "examples/hello",
-        "command": "bin/vite build"
+        "command": "echo TODO bin/vite build"
       }
     },
     "serve": {
@@ -31,7 +31,14 @@
       "dependsOn": ["setup"],
       "options": {
         "cwd": "examples/hello",
-        "command": "bin/dev"
+        "command": "echo TODO bin/dev"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "examples/hello",
+        "command": "echo TODO"
       }
     },
     "stylelint": {

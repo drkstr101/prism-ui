@@ -1,18 +1,14 @@
 import clsx from 'clsx';
 import { type Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import localFont from 'next/font/local';
 
 import { Layout } from '../components/Layout';
 import { Providers } from './providers';
 
-import '@apsphysics/prism-ui.theme';
-
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-});
+// import '@apsphysics/prism-ui.theme';
+import '@apsphysics/prism-ui.theme/fonts.css';
+import '@apsphysics/prism-ui.theme/tokens.css';
+import '../styles/tailwind.css';
 
 // Use local version of Lexend so that we can use OpenType features
 const lexend = localFont({
@@ -34,10 +30,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={clsx('h-full antialiased', inter.variable, lexend.variable)}
+      className={clsx('prism prism--light prism--medium h-full antialiased', lexend.variable)}
       suppressHydrationWarning
     >
-      <body className="flex min-h-full bg-white dark:bg-gray-900">
+      <body className="bg-background-layer-2 flex min-h-full">
         <Providers>
           <Layout>{children}</Layout>
         </Providers>

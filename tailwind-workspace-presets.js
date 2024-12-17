@@ -65,9 +65,6 @@ module.exports = {
       fontFamily: {
         sans: 'var(--spectrum-sans-serif-font-family)',
         serif: 'var(--spectrum-serif-font-family)',
-        heading: 'var(--spectrum-heading-sans-serif-font-family)',
-        body: 'var(--spectrum-body-sans-serif-font-family)',
-        detail: 'var(--spectrum-detail-sans-serif-font-family)',
         code: 'var(--spectrum-code-font-family)',
       },
       /** https://spectrum.adobe.com/page/typography/#Font-sizes */
@@ -450,7 +447,7 @@ module.exports = {
   plugins: [
     // see: https://github.com/tailwindlabs/tailwindcss-forms/blob/main/README.md
     // require('@tailwindcss/forms'),
-    // require('@tailwindcss/typography'),
+    require('@tailwindcss/typography'),
     require('tailwindcss-animate'),
     require('tailwindcss-react-aria-components'),
   ],

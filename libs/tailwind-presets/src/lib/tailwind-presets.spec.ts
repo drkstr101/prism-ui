@@ -10,9 +10,15 @@ describe('tailwindPresets', () => {
       'gray',
       'blue',
       'green',
+      'informative',
+      'negative',
       'neutral',
+      'notice',
       'orange',
-      'red'
+      'positive',
+      'prism',
+      'red',
+      'yellow'
     );
   });
 });

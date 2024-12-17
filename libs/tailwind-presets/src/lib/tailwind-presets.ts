@@ -1,6 +1,4 @@
 import { type Config } from 'tailwindcss';
-import tailwindAnimate from 'tailwindcss-animate';
-import reactAriaComponents from 'tailwindcss-react-aria-components';
 
 export default {
   content: ['**/*.html', '**/*.erb', '**/*.haml', 'app/helpers/**/*.rb', 'app/frontend/**/*.*'],
@@ -69,9 +67,6 @@ export default {
       fontFamily: {
         sans: 'var(--spectrum-sans-serif-font-family)',
         serif: 'var(--spectrum-serif-font-family)',
-        heading: 'var(--spectrum-heading-sans-serif-font-family)',
-        body: 'var(--spectrum-body-sans-serif-font-family)',
-        detail: 'var(--spectrum-detail-sans-serif-font-family)',
         code: 'var(--spectrum-code-font-family)',
       },
       /** https://spectrum.adobe.com/page/typography/#Font-sizes */
@@ -263,14 +258,14 @@ export default {
           down: 'var(--spectrum-blue-1100)',
           focus: 'var(--spectrum-blue-800)',
         },
-        cta: {
-          background: {
-            DEFAULT: 'var(--spectrum-accent-background-color-default)',
-            hover: 'var(--spectrum-accent-background-color-hover)',
-            down: 'var(--spectrum-accent-background-color-down)',
-            keyFocus: 'var(--spectrum-accent-background-color-key-focus)',
-          },
-        },
+        // cta: {
+        //   background: {
+        //     DEFAULT: 'var(--spectrum-accent-background-color-default)',
+        //     hover: 'var(--spectrum-accent-background-color-hover)',
+        //     down: 'var(--spectrum-accent-background-color-down)',
+        //     keyFocus: 'var(--spectrum-accent-background-color-key-focus)',
+        //   },
+        // },
         accent: {
           background: 'var(--spectrum-accent-background-color-default)',
           'background-hover': 'var(--spectrum-accent-background-color-hover)',
@@ -348,9 +343,9 @@ export default {
         // focus: {
         //   DEFAULT: 'var(--spectrum-alias-focus-color)',
         // },
-        'focus-ring': {
-          DEFAULT: 'var(--spectrum-focus-indicator-color)',
-        },
+        // 'focus-ring': {
+        //   DEFAULT: 'var(--spectrum-focus-indicator-color)',
+        // },
         // icon: {
         //   DEFAULT: 'var(--spectrum-alias-icon-color)',
         //   'over-background': 'var(--spectrum-alias-icon-color-over-background)',
@@ -454,8 +449,8 @@ export default {
   plugins: [
     // see: https://github.com/tailwindlabs/tailwindcss-forms/blob/main/README.md
     // require('@tailwindcss/forms'),
-    // require('@tailwindcss/typography'),
-    tailwindAnimate,
-    reactAriaComponents
+    require('@tailwindcss/typography'),
+    require('tailwindcss-animate'),
+    require('tailwindcss-react-aria-components'),
   ],
 } satisfies Config;
