@@ -1,0 +1,14 @@
+@import url('tailwindcss/base.css');
+@import url('prism.css');
+
+@layer base {
+  html,
+  body,
+  prism-app {
+    @apply bg-background-base h-full;
+  }
+
+  [inert] ::-webkit-scrollbar {
+    display: none;
+  }
+}

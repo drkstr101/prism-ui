@@ -6,7 +6,7 @@ import localFont from 'next/font/local';
 import { Layout } from '../components/Layout';
 import { Providers } from './providers';
 
-import '../styles/tailwind.css';
+import '@apsphysics/prism-ui.theme';
 
 const inter = Inter({
   subsets: ['latin'],
