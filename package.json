@@ -4,6 +4,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "setup": "playwright install --with-deps && nx run-many --target=setup --parallel",
     "build": "nx run-many --target=build --parallel",
     "check": "nx run-many -t lint stylelint test build",
     "start": "nx run docs:dev --port 4200",

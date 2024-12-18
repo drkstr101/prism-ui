@@ -15,8 +15,10 @@ ports:
 tasks:
   - name: Setup
     init: |
-      yarn install && yarn playwright install --with-deps
-      # yarn nx run-many --target setup
+      gem install rails rubocop solargraph htmlbeautifier
+      yarn install
+      yarn setup
+      pg_start
       gp sync-done setup
     openMode: split-left
   - name: Start
