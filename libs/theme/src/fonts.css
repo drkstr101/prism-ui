@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Black'), local('AdobeClean-Black'),
-    url('fonts/subset-AdobeClean-Black.woff2') format('woff2'),
-    url('fonts/subset-AdobeClean-Black.woff') format('woff');
+    url('fonts/subset-AdobeClean-Black.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -11,8 +10,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Black Italic'), local('AdobeClean-BlackIt'),
-    url('fonts/subset-AdobeClean-BlackIt.woff2') format('woff2'),
-    url('fonts/subset-AdobeClean-BlackIt.woff') format('woff');
+    url('fonts/subset-AdobeClean-BlackIt.woff2') format('woff2');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -21,8 +19,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Bold'), local('AdobeClean-Bold'),
-    url('fonts/subset-AdobeClean-Bold.woff2') format('woff2'),
-    url('fonts/subset-AdobeClean-Bold.woff') format('woff');
+    url('fonts/subset-AdobeClean-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -31,8 +28,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Italic'), local('AdobeClean-It'),
-    url('fonts/subset-AdobeClean-It.woff2') format('woff2'),
-    url('fonts/subset-AdobeClean-It.woff') format('woff');
+    url('fonts/subset-AdobeClean-It.woff2') format('woff2');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -41,8 +37,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean ExtraBold Italic'), local('AdobeClean-ExtraBoldIt'),
-    url('fonts/subset-AdobeClean-ExtraBoldIt.woff2') format('woff2'),
-    url('fonts/subset-AdobeClean-ExtraBoldIt.woff') format('woff');
+    url('fonts/subset-AdobeClean-ExtraBoldIt.woff2') format('woff2');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -51,8 +46,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Light Italic'), local('AdobeClean-LightIt'),
-    url('fonts/subset-AdobeClean-LightIt.woff2') format('woff2'),
-    url('fonts/subset-AdobeClean-LightIt.woff') format('woff');
+    url('fonts/subset-AdobeClean-LightIt.woff2') format('woff2');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -61,8 +55,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Light'), local('AdobeClean-Light'),
-    url('fonts/subset-AdobeClean-Light.woff2') format('woff2'),
-    url('fonts/subset-AdobeClean-Light.woff') format('woff');
+    url('fonts/subset-AdobeClean-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -71,8 +64,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Bold Italic'), local('AdobeClean-BoldIt'),
-    url('fonts/subset-AdobeClean-BoldIt.woff2') format('woff2'),
-    url('fonts/subset-AdobeClean-BoldIt.woff') format('woff');
+    url('fonts/subset-AdobeClean-BoldIt.woff2') format('woff2');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -81,8 +73,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean ExtraBold'), local('AdobeClean-ExtraBold'),
-    url('fonts/subset-AdobeClean-ExtraBold.woff2') format('woff2'),
-    url('fonts/subset-AdobeClean-ExtraBold.woff') format('woff');
+    url('fonts/subset-AdobeClean-ExtraBold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -91,8 +82,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Medium'), local('AdobeClean-Medium'),
-    url('fonts/subset-AdobeClean-Medium.woff2') format('woff2'),
-    url('fonts/subset-AdobeClean-Medium.woff') format('woff');
+    url('fonts/subset-AdobeClean-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -101,8 +91,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean'), local('AdobeClean-Regular'),
-    url('fonts/subset-AdobeClean-Regular.woff2') format('woff2'),
-    url('fonts/subset-AdobeClean-Regular.woff') format('woff');
+    url('fonts/subset-AdobeClean-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

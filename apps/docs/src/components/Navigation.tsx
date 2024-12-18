@@ -18,7 +18,7 @@ export function Navigation({
       <ul role="list" className="space-y-9">
         {navigation.map((section) => (
           <li key={section.title}>
-            <h2 className="font-display text-neutral-content font-medium dark:text-white">
+            <h2 className="font-heading text-neutral-content font-medium dark:text-white">
               {section.title}
             </h2>
             <ul

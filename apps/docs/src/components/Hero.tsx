@@ -53,10 +53,10 @@ export function Hero() {
               priority
             />
             <div className="relative">
-              <p className="page__title font-display inline bg-gradient-to-r from-indigo-200 via-blue-400 to-indigo-200 bg-clip-text text-5xl tracking-tight text-transparent">
-                Prism UI
+              <p className="page__title font-detail inline bg-gradient-to-r from-indigo-200 via-blue-400 to-indigo-200 bg-clip-text text-5xl font-medium tracking-tight text-transparent">
+                PRISM UI
               </p>
-              <p className="mt-3 text-2xl tracking-tight text-gray-400">
+              <p className="mt-3 text-2xl tracking-tight text-gray-100">
                 Components and tools to help developers work more efficiently, and make
                 applications more cohesive.
               </p>

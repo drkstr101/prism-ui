@@ -26,7 +26,7 @@ function PageLink({
 }) {
   return (
     <div {...props}>
-      <dt className="font-display text-sm font-medium text-gray-900 dark:text-white">
+      <dt className="font-detail text-sm font-medium text-gray-900 dark:text-white">
         {dir === 'next' ? 'Next' : 'Previous'}
       </dt>
       <dd className="mt-1">

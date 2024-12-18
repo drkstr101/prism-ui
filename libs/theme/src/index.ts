@@ -1,3 +1,3 @@
-import './styles.css';
+import './index.css';
 
-export { default as components } from './styles/components';
+export { default } from './components';
