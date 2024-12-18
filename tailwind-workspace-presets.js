@@ -446,7 +446,7 @@ module.exports = {
   },
   plugins: [
     // see: https://github.com/tailwindlabs/tailwindcss-forms/blob/main/README.md
-    // require('@tailwindcss/forms'),
+    require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('tailwindcss-animate'),
     require('tailwindcss-react-aria-components'),
