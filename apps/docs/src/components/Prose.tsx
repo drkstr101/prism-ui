@@ -15,7 +15,7 @@ export function Prose<T extends React.ElementType = 'div'>({
         className,
         'prose prose-gray max-w-none',
         // headings
-        'prose-headings:scroll-mt-28 prose-headings:font-medium prose-headings:font-normal lg:prose-headings:scroll-mt-[8.5rem]',
+        'prose-headings:scroll-mt-28 prose-headings:font-semi-bold lg:prose-headings:scroll-mt-[8.5rem]',
         // lead
         'prose-lead:text-gray-500',
         // links

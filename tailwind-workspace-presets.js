@@ -372,11 +372,11 @@ module.exports = {
     // ringOpacity: {
     //   DEFAULT: '1',
     // },
-    ringWidth: {
-      DEFAULT: 'var(--spectrum-focus-indicator-thickness)',
-      /** For use when next to existing blue border. */
-      // half: 'calc(var(--spectrum-alias-focus-ring-size) / 2)',
-    },
+    // ringWidth: {
+    //   DEFAULT: 'var(--spectrum-focus-indicator-thickness)',
+    //   /** For use when next to existing blue border. */
+    //   // half: 'calc(var(--spectrum-alias-focus-ring-size) / 2)',
+    // },
     /** https://spectrum.adobe.com/page/object-styles/#Border-width */
     // borderWidth: {
     //   DEFAULT: 'var(--spectrum-alias-border-size-thin)',
