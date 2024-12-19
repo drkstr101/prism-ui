@@ -29,5 +29,22 @@
     "next-env.d.ts",
     ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
+  "exclude": [
+    "node_modules",
+    "jest.config.ts",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    ".storybook/*.jsx",
+    ".storybook/*.tsx",
+    "stories/**/*.ts",
+    "stories/**/*.js",
+    "stories/**/*.jsx",
+    "stories/**/*.tsx",
+    "stories/**/*.mdx"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.storybook.json"
+    }
+  ]
 }
