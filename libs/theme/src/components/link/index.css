@@ -11,7 +11,7 @@
  * governing permissions and limitations under the License.
  */
 
-@import url('./themes/prism.css');
+@import url('./themes/internal.css');
 @import url('./themes/external.css');
 
 .link {
