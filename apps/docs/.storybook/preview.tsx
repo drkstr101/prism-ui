@@ -1,6 +1,6 @@
 import { Preview } from '@storybook/react';
 
-import '@apsphysics/prism-ui.theme/index.css';
+import './styles.css';
 
 const preview: Preview = {
   decorators: [

@@ -11,7 +11,8 @@
       "options": {
         "port": 3000,
         "configDir": "apps/docs/.storybook",
-        "docsMode": true
+        "docsMode": true,
+        "quiet": false
       },
       "configurations": {
         "ci": {

@@ -1,6 +1,6 @@
 @import url('tailwindcss/components.css');
-@import url('components/link/index.css');
-@import url('components/typography/index.css');
+@import url('components/link/index.css') layer(components);
+@import url('components/typography/index.css') layer(components);
 
 @layer components {
   .prism-logo {

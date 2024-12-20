@@ -1,11 +1,16 @@
 import type { StorybookConfig } from '@storybook/nextjs';
+import { join } from 'path';
 
 const config: StorybookConfig = {
   stories: ['../**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],
   addons: ['@storybook/addon-essentials', '@storybook/addon-interactions'],
   framework: {
-    name: '@storybook/nextjs',
-    options: {},
+    name: '@storybook/react-vite',
+    options: {
+      builder: {
+        viteConfigPath: join(__dirname, '../vite.config.ts'),
+      },
+    },
   },
 };
 
