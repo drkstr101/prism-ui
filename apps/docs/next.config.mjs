@@ -15,6 +15,16 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
+  rewrites: async () => {
+    return [
+      // Rewrite to Storybook
+      // TODO: - This isn't working. Deploy to a secondary host and forward to that.
+      {
+        source: '/storybook',
+        destination: '/storybook/index.html',
+      },
+    ];
+  },
 };
 
 // const plugins = [

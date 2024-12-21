@@ -1,1 +1,7 @@
 @import url('@apsphysics/prism-ui.theme/index.css');
+
+@layer base {
+  body {
+    @apply bg-background-base;
+  }
+}

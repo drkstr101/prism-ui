@@ -56,4 +56,6 @@ vite.config.*.timestamp*
 .next
 out
 
+# Storybook output
+/apps/docs/public/storybook
 storybook-static
