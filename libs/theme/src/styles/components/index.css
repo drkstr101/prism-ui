@@ -1,4 +1,5 @@
 @import url('tailwindcss/components.css');
+@import url('button') layer(components);
 @import url('link') layer(components);
 @import url('typography') layer(components);
 
