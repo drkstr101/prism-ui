@@ -1,0 +1,33 @@
+{/* ButtonDocs.mdx */}
+
+import { Meta, Primary, Controls, Story } from '@storybook/blocks';
+import * as stories from './typography.stories';
+
+<Meta of={stories} />
+
+# Typography style components
+
+The typography component applies default element styles on a block of content. Paddings and margins
+should be applied in the containing layout container or through additional tailwind utility classes.
+
+<Primary />
+
+## Typography (`.typography`)
+
+<Story of={stories.Typography} />
+
+## Heading (`.heading`)
+
+<Story of={stories.Heading} />
+
+## Body (`.body`)
+
+<Story of={stories.Body} />
+
+## Detail (`.detail`)
+
+<Story of={stories.Detail} />
+
+## Code (`.code`)
+
+<Story of={stories.Code} />

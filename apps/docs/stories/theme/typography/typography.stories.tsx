@@ -1,16 +1,23 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { BodyComposition, CodeComposition, DetailComposition, HeadingComposition, Props, TypographyComposition } from './typography.composition';
+import {
+  BodyComposition,
+  CodeComposition,
+  DetailComposition,
+  HeadingComposition,
+  Props,
+  TypographyComposition,
+} from './typography.composition';
 
 const meta: Meta<typeof TypographyComposition> = {
   title: 'apsphysics.prism-ui/theme/typography',
   component: (props: Props) => <div {...props}></div>,
-  // args: { className: 'text-gray-500' }
+  args: { className: 'bg-background-layer-2 overflow-hidden rounded shadow' },
 };
 
 export const Typography: Story = {
   render: TypographyComposition,
-  args: {}
+  args: {},
 };
 
 export default meta;
@@ -18,20 +25,20 @@ type Story = StoryObj<typeof TypographyComposition>;
 
 export const Heading: Story = {
   render: HeadingComposition,
-  args: {}
+  args: {},
 };
 
 export const Body: Story = {
   render: BodyComposition,
-  args: {}
+  args: {},
 };
 
 export const Detail: Story = {
   render: DetailComposition,
-  args: {}
+  args: {},
 };
 
 export const Code: Story = {
   render: CodeComposition,
-  args: {}
+  args: {},
 };
