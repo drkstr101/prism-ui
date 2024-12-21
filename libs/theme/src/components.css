@@ -1,6 +1,6 @@
 @import url('tailwindcss/components.css');
-@import url('components/link/index.css') layer(components);
-@import url('components/typography/index.css') layer(components);
+@import url('components/link') layer(components);
+@import url('components/typography') layer(components);
 
 @layer components {
   .prism-logo {
@@ -15,5 +15,145 @@
     background-size: 180px 30px;
     height: 30px;
     width: 180px;
+  }
+
+  /********************************
+  * Prose
+  ********************************/
+
+  .prose {
+    @apply text-neutral-content max-w-none;
+
+    /* p {
+      @apply body body--md;
+
+      margin-top: var(--spectrum-body-margin);
+      margin-bottom: var(--spectrum-body-margin);
+    }
+
+    [class~='lead'] {
+      @apply body body--xl text-neutral-subdued-content;
+
+      margin-top: var(--spectrum-spacing-200);
+      margin-bottom: var(--spectrum-spacing-200);
+    }
+
+    .detail {
+      margin-top: var(--spectrum-detail-margin-start);
+      margin-bottom: var(--spectrum-detail-margin-end);
+      margin-block: var(--mod-detail-margin-start, var(--spectrum-detail-margin-start))
+        var(--mod-detail-margin-end, var(--spectrum-detail-margin-end));
+    }
+
+    h1 {
+      @apply heading heading--2xl;
+
+      margin-top: 0;
+      margin-bottom: var(--spectrum-heading-margin-end);
+    }
+
+    h1 + * {
+      margin-top: 0;
+    }
+
+    h2 {
+      @apply heading heading--xl;
+
+      margin-top: var(--spectrum-heading-margin-start);
+      margin-bottom: var(--spectrum-heading-margin-end);
+    }
+
+    h2 + * {
+      margin-top: 0;
+    }
+
+    h3 {
+      @apply heading heading--lg;
+
+      margin-top: var(--spectrum-heading-margin-start);
+      margin-bottom: var(--spectrum-heading-margin-end);
+    }
+
+    h3 + * {
+      margin-top: 0;
+    }
+
+    h4 {
+      @apply heading heading--md;
+
+      margin-top: var(--spectrum-heading-margin-start);
+      margin-bottom: var(--spectrum-heading-margin-end);
+    }
+
+    h4 + * {
+      margin-top: 0;
+    }
+
+    h5 {
+      @apply heading heading--sm;
+
+      margin-top: var(--spectrum-heading-margin-start);
+      margin-bottom: var(--spectrum-heading-margin-end);
+    }
+
+    h5 + * {
+      margin-top: 0;
+    }
+
+    h6 {
+      @apply heading heading--xs;
+
+      margin-top: var(--spectrum-heading-margin-start);
+      margin-bottom: var(--spectrum-heading-margin-end);
+    }
+
+    h6 + * {
+      margin-top: 0;
+    }
+
+    a {
+      @apply link link--secondary;
+    }
+
+    code {
+      @apply font-code;
+
+      font-size: var(--spectrum-code-size-m);
+    }
+
+    h2 code {
+      @apply font-code;
+
+      font-size: var(--spectrum-heading-size-xl);
+    }
+
+    h3 code {
+      @apply font-code;
+
+      font-size: var(--spectrum-heading-size-lg);
+    }
+
+    li {
+      margin-top: var(--spectrum-body-margin);
+      margin-bottom: var(--spectrum-body-margin);
+    }
+
+    ul ul,
+    ul ol,
+    ol ul,
+    ol ol {
+      margin-top: var(--spectrum-body-margin);
+      margin-bottom: var(--spectrum-body-margin);
+    }
+
+    hr {
+      margin-top: var(--spectrum-spacing-100);
+      margin-bottom: var(--spectrum-spacing-400);
+    }
+
+    hr + * {
+      margin-top: 0;
+    }
+    */
   }
 }

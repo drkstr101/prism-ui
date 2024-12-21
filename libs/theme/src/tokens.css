@@ -1565,7 +1565,7 @@
   --spectrum-detail-sans-serif-text-transform: uppercase;
   --spectrum-detail-serif-text-transform: uppercase;
   --spectrum-detail-color: var(--spectrum-gray-900);
-  --spectrum-code-font-family: source code pro;
+  --spectrum-code-font-family: 'Fira Code';
   --spectrum-code-cjk-font-family: var(--spectrum-code-font-family);
   --spectrum-code-font-weight: var(--spectrum-regular-font-weight);
   --spectrum-code-font-style: var(--spectrum-default-font-style);

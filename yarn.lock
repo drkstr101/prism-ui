@@ -4379,6 +4379,7 @@ __metadata:
     "@spectrum-web-components/theme": "npm:^1.0.3"
     "@storybook/addon-essentials": "npm:^8.4.7"
     "@storybook/addon-interactions": "npm:^8.4.7"
+    "@storybook/blocks": "npm:^8.4.7"
     "@storybook/core-server": "npm:^8.4.7"
     "@storybook/react-vite": "npm:^8.4.7"
     "@swc-node/register": "npm:~1.10.9"
@@ -8022,7 +8023,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.4.7":
+"@storybook/blocks@npm:8.4.7, @storybook/blocks@npm:^8.4.7":
   version: 8.4.7
   resolution: "@storybook/blocks@npm:8.4.7"
   dependencies:
