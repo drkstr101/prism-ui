@@ -36,11 +36,11 @@
     "**/*.test.ts",
     ".storybook/*.jsx",
     ".storybook/*.tsx",
-    "stories/**/*.ts",
-    "stories/**/*.js",
-    "stories/**/*.jsx",
-    "stories/**/*.tsx",
-    "stories/**/*.mdx"
+    "src/stories/**/*.ts",
+    "src/stories/**/*.js",
+    "src/stories/**/*.jsx",
+    "src/stories/**/*.tsx",
+    "src/stories/**/*.mdx"
   ],
   "references": [
     {

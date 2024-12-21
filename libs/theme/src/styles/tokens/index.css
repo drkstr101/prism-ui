@@ -1,5 +1,10 @@
-@import url('dark-color.css');
+/* Global data */
 @import url('global-vars.css');
-@import url('large-scale.css');
+
+/* Color modes */
+@import url('dark-color.css');
 @import url('light-color.css');
+
+/* Size scale */
 @import url('medium-scale.css');
+@import url('large-scale.css');

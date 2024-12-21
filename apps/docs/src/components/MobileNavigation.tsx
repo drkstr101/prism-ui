@@ -82,7 +82,7 @@ export function MobileNavigation() {
         className="fixed inset-0 z-50 flex items-start overflow-y-auto bg-gray-900/50 pr-10 backdrop-blur lg:hidden"
         aria-label="Navigation"
       >
-        <DialogPanel className="min-h-full w-full max-w-xs bg-white px-4 pb-12 pt-5 sm:px-6 dark:bg-gray-900">
+        <DialogPanel className="min-h-full w-full max-w-xs bg-white px-4 pb-12 pt-5 sm:px-6">
           <div className="flex items-center">
             <button type="button" onClick={() => close()} aria-label="Close navigation">
               <CloseIcon className="h-6 w-6 stroke-gray-500" />

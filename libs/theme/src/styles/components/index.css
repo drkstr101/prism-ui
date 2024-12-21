@@ -24,7 +24,11 @@
 ********************************/
 
   .typography {
-    @apply prose prose-gray max-w-none;
+    @apply prose text-neutral-content max-w-none;
+
+    blockquote {
+      @apply text-neutral-content;
+    }
 
     p {
       @apply body body--md;
@@ -80,12 +84,30 @@
     li {
       margin-top: var(--spectrum-body-margin);
       margin-bottom: var(--spectrum-body-margin);
+      font-family: var(
+        --mod-body-sans-serif-font-family,
+        var(--spectrum-body-sans-serif-font-family)
+      );
+      font-style: var(
+        --mod-body-sans-serif-font-style,
+        var(--spectrum-body-sans-serif-font-style)
+      );
+      font-weight: var(
+        --mod-body-sans-serif-font-weight,
+        var(--spectrum-body-sans-serif-font-weight)
+      );
+      font-size: var(--mod-body-font-size, var(--spectrum-body-font-size));
+
+      /* color: var(--highcontrast-body-font-color, var(--mod-body-font-color, var(--spectrum-body-font-color))); */
+      line-height: var(--mod-body-line-height, var(--spectrum-body-line-height));
     }
 
     ul ul,
     ul ol,
     ol ul,
     ol ol {
+      @apply text-neutral-content;
+
       margin-top: var(--spectrum-body-margin);
       margin-bottom: var(--spectrum-body-margin);
     }

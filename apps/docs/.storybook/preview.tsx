@@ -1,6 +1,7 @@
+import { withThemeByClassName } from '@storybook/addon-themes';
 import { Preview } from '@storybook/react';
 
-import './styles.css';
+import '@apsphysics/prism-ui.theme';
 
 const preview: Preview = {
   parameters: {
@@ -13,12 +14,17 @@ const preview: Preview = {
     },
   },
   decorators: [
+    withThemeByClassName({
+      themes: {
+        light: 'prism prism--medium prism--light',
+        dark: 'prism prism--medium prism--dark',
+      },
+      defaultTheme: 'light',
+    }),
     (Story) => (
-      <div className="prism prism--medium prism--light">
-        <article className="bg-background-base h-full p-2">
-          <Story />
-        </article>
-      </div>
+      <article className="bg-background-base p-3">
+        <Story />
+      </article>
     ),
   ],
 };

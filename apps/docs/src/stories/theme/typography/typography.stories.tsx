@@ -12,7 +12,7 @@ import {
 const meta: Meta<typeof TypographyComposition> = {
   title: 'apsphysics.prism-ui/theme/typography',
   component: (props: Props) => <div {...props}></div>,
-  args: { className: 'bg-background-layer-2 overflow-hidden rounded shadow' },
+  args: {},
 };
 
 export const Typography: Story = {

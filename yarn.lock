@@ -4379,6 +4379,7 @@ __metadata:
     "@spectrum-web-components/theme": "npm:^1.0.3"
     "@storybook/addon-essentials": "npm:^8.4.7"
     "@storybook/addon-interactions": "npm:^8.4.7"
+    "@storybook/addon-themes": "npm:^8.4.7"
     "@storybook/blocks": "npm:^8.4.7"
     "@storybook/core-server": "npm:^8.4.7"
     "@storybook/react-vite": "npm:^8.4.7"
@@ -8000,6 +8001,17 @@ __metadata:
   peerDependencies:
     storybook: ^8.4.7
   checksum: 10c0/13e8579ad1e9c8e338a66935331764351d9681e177469c7be72bc8383d6ab0441a783b2089ac3a730979d9a97c347800a47769b1f1ab5b4dfd7fc31f29e1709f
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-themes@npm:^8.4.7":
+  version: 8.4.7
+  resolution: "@storybook/addon-themes@npm:8.4.7"
+  dependencies:
+    ts-dedent: "npm:^2.0.0"
+  peerDependencies:
+    storybook: ^8.4.7
+  checksum: 10c0/18974c4cf511fd60fd97412ae4d91096cce5c1eee3ce05bde0d5ce6db93d983392c80d75990a89d4962bda00895e87fba3f73fbb110c46644f6b6a4cba88200d
   languageName: node
   linkType: hard
 

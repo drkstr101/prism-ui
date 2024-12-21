@@ -4,14 +4,14 @@ import { Icon } from './Icon';
 
 const styles = {
   note: {
-    container: 'bg-blue-50 dark:bg-gray-800/60 dark:ring-1 dark:ring-gray-300/10',
-    title: 'text-blue-900 dark:text-blue-400',
-    body: 'text-blue-800 [--tw-prose-background:theme(colors.blue.50)] prose-a:text-blue-900 prose-code:text-blue-900 dark:text-gray-300 dark:prose-code:text-gray-300',
+    container: 'bg-blue-50',
+    title: 'text-blue-900',
+    body: 'text-blue-800 [--tw-prose-background:theme(colors.blue.50)] prose-a:text-blue-900 prose-code:text-blue-900',
   },
   warning: {
-    container: 'bg-amber-50 dark:bg-gray-800/60 dark:ring-1 dark:ring-gray-300/10',
-    title: 'text-amber-900 dark:text-amber-500',
-    body: 'text-amber-800 [--tw-prose-underline:theme(colors.amber.400)] [--tw-prose-background:theme(colors.amber.50)] prose-a:text-amber-900 prose-code:text-amber-900 dark:text-gray-300 dark:[--tw-prose-underline:theme(colors.blue.700)] dark:prose-code:text-gray-300',
+    container: 'bg-amber-50',
+    title: 'text-amber-900',
+    body: 'text-amber-800 [--tw-prose-underline:theme(colors.amber.400)] [--tw-prose-background:theme(colors.amber.50)] prose-a:text-amber-900 prose-code:text-amber-900',
   },
 };
 

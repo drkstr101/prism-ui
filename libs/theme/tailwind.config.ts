@@ -4,7 +4,7 @@ import { type Config } from 'tailwindcss';
 
 export default {
   content: [
-    join(__dirname, '{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html}'),
+    join(__dirname, 'src/**/*!(*.spec).{js,jsx,ts,tsx,md,mdx,html}'),
     ...createGlobPatternsForDependencies(__dirname),
   ],
   theme: {

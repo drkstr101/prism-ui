@@ -11,3 +11,5 @@
 
 /examples/hello/**/*.*
 !/examples/hello/app/frontend/**/*.*
+
+**/.next/

@@ -3,7 +3,7 @@ import { HtmlHTMLAttributes } from 'react';
 export type Props = HtmlHTMLAttributes<HTMLDivElement>;
 
 const Container = ({ children, ...props }: Props) => (
-  <div {...props}>
+  <div className="bg-background-layer-2">
     <div className="px-4 py-5 sm:p-6">{children}</div>
   </div>
 );
@@ -94,7 +94,7 @@ export default {
         </pre>
       </section>
       <footer>
-        <h2>Footer</h2>
+        <h2 className="header">Header in footer</h2>
         <hr />
         <ul>
           <li>
