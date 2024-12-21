@@ -13,9 +13,6 @@
  * governing permissions and limitations under the License.
  */
 
-@import url('./themes/internal.css');
-@import url('./themes/external.css');
-
 /* Typography - Default */
 .prism {
   --spectrum-font-family-ar: myriad-arabic, adobe-clean, 'Source Sans Pro', -apple-system,
@@ -889,5 +886,3 @@
     );
   }
 }
-
-

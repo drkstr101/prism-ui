@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Black'), local('AdobeClean-Black'),
-    url('fonts/subset-AdobeClean-Black.woff2') format('woff2');
+    url('./subset-AdobeClean-Black.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Black Italic'), local('AdobeClean-BlackIt'),
-    url('fonts/subset-AdobeClean-BlackIt.woff2') format('woff2');
+    url('./subset-AdobeClean-BlackIt.woff2') format('woff2');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Bold'), local('AdobeClean-Bold'),
-    url('fonts/subset-AdobeClean-Bold.woff2') format('woff2');
+    url('./subset-AdobeClean-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -28,7 +28,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Italic'), local('AdobeClean-It'),
-    url('fonts/subset-AdobeClean-It.woff2') format('woff2');
+    url('./subset-AdobeClean-It.woff2') format('woff2');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -37,7 +37,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean ExtraBold Italic'), local('AdobeClean-ExtraBoldIt'),
-    url('fonts/subset-AdobeClean-ExtraBoldIt.woff2') format('woff2');
+    url('./subset-AdobeClean-ExtraBoldIt.woff2') format('woff2');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -46,7 +46,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Light Italic'), local('AdobeClean-LightIt'),
-    url('fonts/subset-AdobeClean-LightIt.woff2') format('woff2');
+    url('./subset-AdobeClean-LightIt.woff2') format('woff2');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -55,7 +55,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Light'), local('AdobeClean-Light'),
-    url('fonts/subset-AdobeClean-Light.woff2') format('woff2');
+    url('./subset-AdobeClean-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -64,7 +64,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Bold Italic'), local('AdobeClean-BoldIt'),
-    url('fonts/subset-AdobeClean-BoldIt.woff2') format('woff2');
+    url('./subset-AdobeClean-BoldIt.woff2') format('woff2');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -73,7 +73,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean ExtraBold'), local('AdobeClean-ExtraBold'),
-    url('fonts/subset-AdobeClean-ExtraBold.woff2') format('woff2');
+    url('./subset-AdobeClean-ExtraBold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -82,7 +82,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean Medium'), local('AdobeClean-Medium'),
-    url('fonts/subset-AdobeClean-Medium.woff2') format('woff2');
+    url('./subset-AdobeClean-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -91,7 +91,7 @@
 @font-face {
   font-family: 'Adobe Clean';
   src: local('Adobe Clean'), local('AdobeClean-Regular'),
-    url('fonts/subset-AdobeClean-Regular.woff2') format('woff2');
+    url('./subset-AdobeClean-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -100,7 +100,7 @@
 @font-face {
   font-family: 'Fira Code';
   src: local('Fira Code Medium'), local('FiraCode-Medium'),
-    url('fonts/FiraCode-Medium.woff2') format('woff2');
+    url('./FiraCode-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -109,7 +109,7 @@
 @font-face {
   font-family: 'Fira Code';
   src: local('Fira Code Regular'), local('FiraCode-Regular'),
-    url('fonts/FiraCode-Regular.woff2') format('woff2');
+    url('./FiraCode-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

@@ -1,6 +1,6 @@
 @import url('tailwindcss/components.css');
-@import url('components/link') layer(components);
-@import url('components/typography') layer(components);
+@import url('link') layer(components);
+@import url('typography') layer(components);
 
 @layer components {
   .prism-logo {
@@ -22,7 +22,7 @@
 ********************************/
 
   .typography {
-    @apply prose prose-gray max-w-none max-w-none;
+    @apply prose prose-gray max-w-none;
 
     p {
       @apply body body--md;
