@@ -129,7 +129,6 @@ function HighlightQuery({ text, query }: { text: string; query: string }) {
       searchWords={[query]}
       autoEscape={true}
       textToHighlight={text}
-
     />
   );
 }
