@@ -64,7 +64,7 @@ export function TableOfContents({ tableOfContents }: { tableOfContents: Array<Se
           <>
             <h2
               id="on-this-page-title"
-              className="font-heading text-sm font-medium text-gray-900 dark:text-white"
+              className="font-heading text-sm font-medium text-gray-900"
             >
               On this page
             </h2>
@@ -77,25 +77,20 @@ export function TableOfContents({ tableOfContents }: { tableOfContents: Array<Se
                       className={clsx(
                         isActive(section)
                           ? 'text-blue-500'
-                          : 'font-normal text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
+                          : 'font-normal text-gray-500 hover:text-gray-700'
                       )}
                     >
                       {section.title}
                     </Link>
                   </h3>
                   {section.children.length > 0 && (
-                    <ol
-                      role="list"
-                      className="mt-2 space-y-3 pl-5 text-gray-500 dark:text-gray-400"
-                    >
+                    <ol role="list" className="mt-2 space-y-3 pl-5 text-gray-500">
                       {section.children.map((subSection) => (
                         <li key={subSection.id}>
                           <Link
                             href={`#${subSection.id}`}
                             className={
-                              isActive(subSection)
-                                ? 'text-blue-500'
-                                : 'hover:text-gray-600 dark:hover:text-gray-300'
+                              isActive(subSection) ? 'text-blue-500' : 'hover:text-gray-600'
                             }
                           >
                             {subSection.title}

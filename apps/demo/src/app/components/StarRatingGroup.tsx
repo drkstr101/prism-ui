@@ -88,7 +88,7 @@ export function StarRating({
         <>
           <svg
             data-rating={rating}
-            className={isFilled ? fillColor : 'dark:fill-white'}
+            className={isFilled ? fillColor : 'fill-gray-50'}
             xmlns="http://www.w3.org/2000/svg"
             width={18}
             height={18}

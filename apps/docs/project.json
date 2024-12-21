@@ -11,7 +11,21 @@
       "options": {
         "port": 3000,
         "configDir": "apps/docs/.storybook",
-        "docsMode": true
+        "docsMode": true,
+        "quiet": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nx/storybook:build",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "apps/docs/public/storybook",
+        "configDir": "apps/docs/.storybook"
       },
       "configurations": {
         "ci": {

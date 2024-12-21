@@ -37,10 +37,10 @@ function Header() {
   return (
     <header
       className={clsx(
-        'sticky top-0 z-50 flex flex-none flex-wrap items-center justify-between bg-white px-4 py-5 shadow-md shadow-gray-900/5 transition duration-500 sm:px-6 lg:px-8 dark:shadow-none',
+        'sticky top-0 z-50 flex flex-none flex-wrap items-center justify-between bg-white px-4 py-5 shadow-md shadow-gray-900/5 transition duration-500 sm:px-6 lg:px-8',
         isScrolled
-          ? 'dark:bg-gray-900/95 dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-gray-900/75'
-          : 'dark:bg-transparent'
+          ? 'bg-gray-100/95 backdrop-blur [@supports(backdrop-filter:blur(0))]:bg-gray-100/75'
+          : 'bg-transparent'
       )}
     >
       <div className="mr-6 flex lg:hidden">
@@ -49,7 +49,7 @@ function Header() {
       <div className="relative flex flex-grow basis-0 items-center">
         <Link href="/" aria-label="Home page">
           <Logomark className="h-9 w-9 lg:hidden" />
-          <Logo className="hidden h-9 w-auto fill-gray-700 lg:block dark:fill-blue-100" />
+          <Logo className="hidden h-9 w-auto fill-gray-700 lg:block" />
         </Link>
       </div>
       <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
@@ -58,12 +58,12 @@ function Header() {
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
         <ThemeSelector className="relative z-10" />
         <Link
-          href="https://github.com/drkstr101/prism-ui"
+          href="https://github.com/apsphysics/prism-ui"
           target="__blank"
           className="group"
           aria-label="GitHub"
         >
-          <GitHubIcon className="h-6 w-6 fill-gray-400 group-hover:fill-gray-500 dark:group-hover:fill-gray-300" />
+          <GitHubIcon className="h-6 w-6 fill-gray-400 group-hover:fill-gray-500" />
         </Link>
       </div>
     </header>
@@ -80,11 +80,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
       {isHomePage && <Hero />}
 
-      <div className="max-w-8xl relative mx-auto flex w-full flex-auto justify-center sm:px-2 lg:px-8 xl:px-12">
+      <div className="relative mx-auto flex w-full max-w-7xl flex-auto justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="bg-background-layer-1 absolute inset-y-0 right-0 w-[50vw] dark:hidden" />
           <div className="absolute bottom-0 right-0 top-16 hidden h-12 w-px bg-gradient-to-t from-gray-800 dark:block" />
-          <div className="absolute bottom-0 right-0 top-28 hidden w-px bg-gray-800 dark:block" />
+          <div className="absolute bottom-0 right-0 top-28 hidden w-px bg-gray-800 " />
           <div className="sticky top-[4.75rem] -ml-0.5 h-[calc(100vh-4.75rem)] w-64 overflow-y-auto overflow-x-hidden py-16 pl-0.5 pr-8 xl:w-72 xl:pr-16">
             <Navigation />
           </div>

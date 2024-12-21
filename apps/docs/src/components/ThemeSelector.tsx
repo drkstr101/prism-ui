@@ -77,7 +77,7 @@ export function ThemeSelector(props: React.ComponentPropsWithoutRef<typeof Listb
           )}
         />
       </ListboxButton>
-      <ListboxOptions className="absolute left-1/2 top-full mt-3 w-36 -translate-x-1/2 space-y-1 rounded-xl bg-white p-3 text-sm font-medium shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-gray-800 dark:ring-white/5">
+      <ListboxOptions className="absolute left-1/2 top-full mt-3 w-36 -translate-x-1/2 space-y-1 rounded-xl bg-white p-3 text-sm font-medium shadow-md shadow-black/5 ring-1 ring-black/5">
         {themes.map((theme) => (
           <ListboxOption
             key={theme.value}
@@ -85,20 +85,17 @@ export function ThemeSelector(props: React.ComponentPropsWithoutRef<typeof Listb
             className={({ focus, selected }) =>
               clsx('flex cursor-pointer select-none items-center rounded-[0.625rem] p-1', {
                 'text-blue-500': selected,
-                'text-gray-900 dark:text-white': focus && !selected,
-                'text-gray-700 dark:text-gray-400': !focus && !selected,
-                'bg-gray-100 dark:bg-gray-900/40': focus,
+                'text-gray-900 ': focus && !selected,
+                'text-gray-700 ': !focus && !selected,
+                'bg-gray-100 ': focus,
               })
             }
           >
             {({ selected }) => (
               <>
-                <div className="rounded-md bg-white p-1 shadow ring-1 ring-gray-900/5 dark:bg-gray-700 dark:ring-inset dark:ring-white/5">
+                <div className="rounded-md bg-white p-1 shadow ring-1 ring-gray-900/5">
                   <theme.icon
-                    className={clsx(
-                      'h-4 w-4',
-                      selected ? 'fill-blue-400 dark:fill-blue-400' : 'fill-gray-400'
-                    )}
+                    className={clsx('h-4 w-4', selected ? 'fill-blue-400' : 'fill-gray-400')}
                   />
                 </div>
                 <div className="ml-3">{theme.name}</div>

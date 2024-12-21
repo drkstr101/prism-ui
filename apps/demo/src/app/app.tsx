@@ -157,9 +157,9 @@ module.exports = {
                 left text alignment for small width devices based on Spectrum's break points.
               </li>
               <li>
-                Using <code className="rounded bg-gray-200 p-40">dark:bg-black</code> will give
-                you a black background if the user is in dark mode based on the React Spectrum
-                provider.
+                Using <code className="rounded bg-gray-200 p-40">bg-background-base</code> will
+                give you a black background if the user is in dark mode based on the React
+                Spectrum provider.
               </li>
             </ul>
             <div>

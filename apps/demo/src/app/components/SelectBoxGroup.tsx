@@ -25,7 +25,7 @@ export function SelectBox({ name, icon, description }: SelectBoxProps) {
   return (
     <Radio
       value={name}
-      className="p-160 m-160 h-2000 w-2000 focus-visible:ring-half selected:bg-accent-100 selected:border-accent-700 flex justify-center rounded border bg-white focus:outline-none focus-visible:ring-offset-0 dark:bg-black"
+      className="p-160 m-160 h-2000 w-2000 focus-visible:ring-half selected:bg-accent-100 selected:border-accent-700 flex justify-center rounded border bg-white focus:outline-none focus-visible:ring-offset-0"
     >
       {({ isSelected }) => (
         <div className="gap-150 relative flex h-full w-full flex-col items-center justify-center">

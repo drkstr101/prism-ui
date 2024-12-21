@@ -3,7 +3,10 @@ module.exports = {
   future: {
     respectDefaultRingColorOpacity: true,
   },
-  darkMode: ['class', '[style*="color-scheme: dark;"]'],
+  darkMode: [
+    'variant',
+    ['@media (prefers-color-scheme: dark) { &:not(.prism--light *) }', '&:is(.prism--dark *)'],
+  ],
   theme: {
     extend: {
       // ringOffsetWidth: {

@@ -1,13 +1,9 @@
-import clsx from 'clsx';
 import { type Metadata } from 'next';
 
 import { Layout } from '../components/Layout';
 import { Providers } from './providers';
 
-// import '@apsphysics/prism-ui.theme';
-import '@apsphysics/prism-ui.theme/fonts.css';
-import '@apsphysics/prism-ui.theme/tokens.css';
-import '../styles/tailwind.css';
+import '@apsphysics/prism-ui.theme';
 
 export const metadata: Metadata = {
   title: {
