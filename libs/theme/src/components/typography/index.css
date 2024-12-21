@@ -890,27 +890,4 @@
   }
 }
 
-/********************************
-* Typography
-********************************/
 
-.typography {
-  @apply prose prose-gray max-w-none;
-
-  /* Add margin when inside a Typography component */
-  .heading {
-    margin-block: var(--mod-heading-margin-start, var(--spectrum-heading-margin-start))
-      var(--mod-heading-margin-end, var(--spectrum-heading-margin-end));
-  }
-
-  /* Add margin when inside a Typography component */
-  .body {
-    margin-block-end: var(--mod-body-margin, var(--spectrum-body-margin));
-  }
-
-  /* Add margin when inside a Typography component */
-  .detail {
-    margin-block: var(--mod-detail-margin-start, var(--spectrum-detail-margin-start))
-      var(--mod-detail-margin-end, var(--spectrum-detail-margin-end));
-  }
-}

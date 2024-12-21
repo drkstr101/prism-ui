@@ -12,7 +12,7 @@ export const TypographyComposition = (props: Props) => (
   <Container {...props}>
     <main className="typography">
       <header>
-        <label className="detail">Detail</label>
+        <label className="detail">Typography</label>
         <h1>Top level title</h1>
         <hr />
         <p className="lead">
@@ -24,9 +24,11 @@ export const TypographyComposition = (props: Props) => (
       <section aria-labelledby="section-hero-title">
         <h2 id="section-hero-title">Section title</h2>
         <hr />
-        <h3>Level 3 header</h3>
+        <h1>Level one</h1>
+        <h2>Level two header</h2>
+        <h3>Level three header</h3>
         <h4>
-          Level 4 header{' '}
+          Level four header{' '}
           <strong>
             with a <em>very long</em>
           </strong>{' '}
