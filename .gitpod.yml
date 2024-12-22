@@ -1,0 +1,27 @@
+image:
+  file: Dockerfile.gitpod
+
+ports:
+  - name: Storybok / Demo
+    port: 3000
+    onOpen: open-preview
+  - name: Frontend application
+    port: 4200
+    onOpen: open-preview
+  - name: PostgreSQL server
+    port: 5432
+    onOpen: ignore
+
+tasks:
+  - name: Setup
+    init: |
+      # gem install rails rubocop solargraph htmlbeautifier
+      pnpm install
+      pnpm setup
+      # pg_start
+      gp sync-done setup
+    openMode: split-left
+  - name: Start
+    init: gp sync-await setup
+    command: pnpm start
+    openMode: split-right
