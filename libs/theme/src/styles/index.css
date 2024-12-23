@@ -3,6 +3,9 @@
 @import url('@spectrum-css/tokens/dist/index.css');
 @import url('@spectrum-css/page/dist/index.css');
 
+/* Typefaces */
+@import url('fonts.css');
+
 /* Tailwind imports */
 
 @import url('tailwindcss/base.css');

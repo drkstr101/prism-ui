@@ -13,3 +13,5 @@
 !/examples/hello/app/frontend/**/*.*
 
 **/.next/
+
+/pnpm-lock.yaml

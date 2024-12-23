@@ -16,9 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@assets/fonts/*": ["content/assets/fonts/*"],
       "@assets/images/*": ["content/assets/images/*"],
-      "@content/data/*": ["content/data/*"],
+      "@assets/data/*": ["content/data/*"],
       "@apsphysics/prism-ui.theme": ["libs/theme/src/index.ts"]
     }
   },

@@ -1,0 +1,209 @@
+/************************************
+ * Adobe Clean (sans)
+ ************************************/
+
+@font-face {
+  font-family: 'Adobe Clean';
+  src:
+    local('Adobe Clean Bold'),
+    local('AdobeClean-Bold'),
+    url('fonts/subset-AdobeClean-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adobe Clean';
+  src:
+    local('Adobe Clean Black Italic'),
+    local('AdobeClean-BlackIt'),
+    url('fonts/subset-AdobeClean-BlackIt.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adobe Clean';
+  src:
+    local('Adobe Clean Bold Italic'),
+    local('AdobeClean-BoldIt'),
+    url('fonts/subset-AdobeClean-BoldIt.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adobe Clean';
+  src:
+    local('Adobe Clean Italic'),
+    local('AdobeClean-It'),
+    url('fonts/subset-AdobeClean-It.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adobe Clean';
+  src:
+    local('Adobe Clean'),
+    local('AdobeClean-Regular'),
+    url('fonts/subset-AdobeClean-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adobe Clean';
+  src:
+    local('Adobe Clean Medium'),
+    local('AdobeClean-Medium'),
+    url('fonts/subset-AdobeClean-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/************************************
+ * Adobe Clean (serif)
+ ************************************/
+
+@font-face {
+  font-family: 'Adobe Clean Serif';
+  src:
+    local('Adobe Clean Serif Bold'),
+    local('AdobeCleanSerif-Bold'),
+    url('fonts/subset-AdobeCleanSerif-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adobe Clean Serif';
+  src:
+    local('Adobe Clean Serif Black Italic'),
+    local('AdobeCleanSerif-BlackIt'),
+    url('fonts/subset-AdobeCleanSerif-BlackIt.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adobe Clean Serif';
+  src:
+    local('Adobe Clean Serif Italic'),
+    local('AdobeCleanSerif-It'),
+    url('fonts/subset-AdobeCleanSerif-It.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adobe Clean Serif';
+  src:
+    local('Adobe Clean Serif Medium'),
+    local('AdobeCleanSerif-Medium'),
+    url('fonts/subset-AdobeCleanSerif-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adobe Clean Serif';
+  src:
+    local('Adobe Clean Serif Black'),
+    local('AdobeCleanSerif-Black'),
+    url('fonts/subset-AdobeCleanSerif-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adobe Clean Serif';
+  src:
+    local('Adobe Clean Serif Bold Italic'),
+    local('AdobeCleanSerif-BoldIt'),
+    url('fonts/subset-AdobeCleanSerif-BoldIt.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adobe Clean Serif';
+  src:
+    local('Adobe Clean Serif Medium Italic'),
+    local('AdobeCleanSerif-MediumIt'),
+    url('fonts/subset-AdobeCleanSerif-MediumIt.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adobe Clean Serif';
+  src:
+    local('Adobe Clean Serif'),
+    local('AdobeCleanSerif-Regular'),
+    url('fonts/subset-AdobeCleanSerif-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/************************************
+ * Source Code Pro (code)
+ ************************************/
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src:
+    local('Source Code Pro Bold'),
+    local('SourceCodePro-Bold'),
+    url('fonts/SourceCodePro-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src:
+    local('Source Code Pro Italic'),
+    local('SourceCodePro-It'),
+    url('fonts/SourceCodePro-It.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src:
+    local('Source Code Pro'),
+    local('SourceCodePro-Regular'),
+    url('fonts/SourceCodePro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src:
+    local('Source Code Pro Bold Italic'),
+    local('SourceCodePro-BoldIt'),
+    url('fonts/SourceCodePro-BoldIt.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}

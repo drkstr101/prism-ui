@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "check": "nx format:check && nx run-many -t lint stylelint test build",
     "format": "prettier . --write",
     "setup": "echo TODO",
     "build": "nx run-many -t build",
@@ -16,7 +17,7 @@
   "dependencies": {
     "@spectrum-css/page": "^8.2.0",
     "@spectrum-css/tokens": "^14.6.0",
-    "next": "14.2.16",
+    "next": "14.2.21",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
@@ -71,9 +72,12 @@
     "nx": "20.3.0",
     "nx-stylelint": "^18.0.0",
     "postcss": "8.4.49",
+    "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^16.1.0",
+    "postcss-preset-env": "^10.1.2",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
+    "sharp": "^0.33.5",
     "stylelint": "^16.10.0",
     "stylelint-config-standard": "^36.0.1",
     "stylelint-config-tailwindcss": "^0.0.7",
