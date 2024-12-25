@@ -6,16 +6,16 @@ export default function Index() {
    */
   return (
     <div>
-      <div className="wrapper">
-        <div className="container">
+      <div className="lg:px- mx-auto max-w-7xl px-4 py-8">
+        <div className="container mx-auto">
           <div id="welcome">
-            <h1>
-              <span> Hello there, </span>
-              Welcome Prism UI 👋
+            <h1 className="heading heading--3xl">
+              <span className="heading heading--xl heading--light"> Welcome to, </span>
+              Prism UI 👋
             </h1>
           </div>
 
-          <div id="hero" className="rounded">
+          <div id="hero" className="rounded-xl shadow">
             <div className="text-container">
               <h2>
                 <svg
@@ -48,8 +48,8 @@ export default function Index() {
           </div>
 
           <div id="middle-content">
-            <div id="learning-materials" className="rounded shadow">
-              <h2>Learning materials</h2>
+            <div id="learning-materials" className="bg-background-layer-1 rounded-lg shadow">
+              <h2 className="heading heading--md">Learning materials</h2>
               <a
                 href="https://nx.dev/getting-started/intro?utm_source=nx-project"
                 target="_blank"
@@ -237,7 +237,7 @@ export default function Index() {
             <div id="other-links">
               <a
                 id="nx-console"
-                className="button-pill rounded shadow"
+                className="button-pill bg-background-layer-1 rounded-lg shadow"
                 href="https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console&utm_source=nx-project"
                 target="_blank"
                 rel="noreferrer"
@@ -258,7 +258,7 @@ export default function Index() {
               </a>
               <a
                 id="nx-console-jetbrains"
-                className="button-pill rounded shadow"
+                className="button-pill bg-background-layer-1 rounded-lg shadow"
                 href="https://plugins.jetbrains.com/plugin/21060-nx-console"
                 target="_blank"
                 rel="noreferrer"
@@ -288,7 +288,7 @@ export default function Index() {
                   <span>Available for WebStorm, Intellij IDEA Ultimate and more!</span>
                 </span>
               </a>
-              <div id="nx-cloud" className="rounded shadow">
+              <div id="nx-cloud" className="bg-background-layer-1 rounded-lg shadow">
                 <div>
                   <svg
                     id="nx-cloud-logo"
@@ -307,8 +307,9 @@ export default function Index() {
                       d="M23 6v14.1667C23 21.7307 21.7307 23 20.1667 23H6c0-3.128 2.53867-5.6667 5.6667-5.6667 3.128 0 5.6666-2.5386 5.6666-5.6666C17.3333 8.53867 19.872 6 23 6Z"
                     />
                   </svg>
-                  <h2>
+                  <h2 className="heading heading--sm heading--light ml-4">
                     Nx Cloud
+                    <br />
                     <span>Enable faster CI & better DX</span>
                   </h2>
                 </div>
@@ -321,7 +322,7 @@ export default function Index() {
               </div>
               <a
                 id="nx-repo"
-                className="button-pill rounded shadow"
+                className="button-pill bg-background-layer-1 rounded-lg shadow"
                 href="https://github.com/nrwl/nx?utm_source=nx-project"
                 target="_blank"
                 rel="noreferrer"
@@ -342,9 +343,9 @@ export default function Index() {
             </div>
           </div>
 
-          <div id="commands" className="rounded shadow">
-            <h2>Next steps</h2>
-            <p>Here are some things you can do with Nx:</p>
+          <div id="commands" className="bg-background-layer-1 rounded-lg shadow">
+            <h2 className="heading heading--md">Next steps</h2>
+            <p className="body body--lg">Here are some things you can do with Nx:</p>
             <details>
               <summary>
                 <svg

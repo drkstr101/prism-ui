@@ -13,68 +13,27 @@ svg {
 }
 
 pre {
-  display: blocj;
+  display: block;
   background-color: rgb(55 65 81 / 100%);
   border-radius: 0.25rem;
   color: rgb(229 231 235 / 100%);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-    'Courier New', monospace;
   overflow: scroll;
   padding: 0.5rem 0.75rem;
 }
 
-.shadow {
-  box-shadow:
-    0 0 #0000,
-    0 0 #0000,
-    0 10px 15px -3px rgb(0 0 0 / 10%),
-    0 4px 6px -2px rgb(0 0 0 / 5%);
-}
-
-.rounded {
-  border-radius: 1.5rem;
-}
-
-.wrapper {
-  width: 100%;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 768px;
-  padding-bottom: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: rgb(55 65 81 / 100%);
-  width: 100%;
-}
-
-#welcome {
-  margin-top: 2.5rem;
-}
-
-#welcome h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  letter-spacing: -0.025em;
-  line-height: 1;
-}
-
 #welcome span {
   display: block;
-  font-size: 1.875rem;
-  font-weight: 300;
-  line-height: 2.25rem;
+
+  /* font-weight: var(--spectrum-light-font-weight); */
   margin-bottom: 0.5rem;
 }
 
 #hero {
+  @apply bg-accent-1200 text-white;
+
   align-items: center;
-  background-color: hsl(214deg 62% 21% / 100%);
   border: none;
   box-sizing: border-box;
-  color: rgb(55 65 81 / 100%);
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 3.5rem;
@@ -136,15 +95,6 @@ pre {
 
 #learning-materials {
   padding: 2.5rem 2rem;
-}
-
-#learning-materials h2 {
-  font-weight: 500;
-  font-size: 1.25rem;
-  letter-spacing: -0.025em;
-  line-height: 1.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .list-item-link {
@@ -358,22 +308,6 @@ pre {
   width: 3rem;
 }
 
-#nx-cloud > div h2 {
-  font-size: 1.125rem;
-  font-weight: 400;
-  letter-spacing: -0.025em;
-  line-height: 1.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-#nx-cloud > div h2 span {
-  display: block;
-  font-size: 0.875rem;
-  font-weight: 300;
-  line-height: 1.25rem;
-}
-
 #nx-cloud p {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -400,15 +334,6 @@ pre {
 #commands {
   padding: 2.5rem 2rem;
   margin-top: 3.5rem;
-}
-
-#commands h2 {
-  font-size: 1.25rem;
-  font-weight: 400;
-  letter-spacing: -0.025em;
-  line-height: 1.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 #commands p {
