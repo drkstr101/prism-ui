@@ -1,4 +1,4 @@
-import '@apsphysics/prism-ui.theme';
+import '@apsphysics/prism-ui.theme/styles.css';
 
 import './global.css';
 

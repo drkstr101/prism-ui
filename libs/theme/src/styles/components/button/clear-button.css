@@ -1,0 +1,181 @@
+/*!
+* Copyright 2024 Adobe. All rights reserved.
+*
+* This file is licensed to you under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License. You may obtain a copy
+* of the License at <http://www.apache.org/licenses/LICENSE-2.0>
+*
+* Unless required by applicable law or agreed to in writing, software distributed under
+* the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+* OF ANY KIND, either express or implied. See the License for the specific language
+* governing permissions and limitations under the License.
+*/
+
+/* clear-button__fill
+ **************************/
+
+.clear-button__fill {
+  background-color: var(
+    --mod-clear-button-background-color,
+    var(--spectrum-clear-button-background-color)
+  );
+  inline-size: 100%;
+  block-size: 100%;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* @deprecated .clear-button--over-background */
+.clear-button--white,
+.clear-button--over-background {
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .clear-button {
+    &:not(:disabled) {
+      --highcontrast-clear-button-icon-color-hover: Highlight;
+    }
+  }
+}
+
+/* clear-button
+ **************************/
+
+.clear-button {
+  --spectrum-clear-button-height: var(--spectrum-component-height-100);
+  --spectrum-clear-button-width: var(--spectrum-component-height-100);
+  --spectrum-clear-button-padding: var(--spectrum-in-field-button-edge-to-fill);
+  --spectrum-clear-button-icon-color: var(--spectrum-neutral-content-color-default);
+  --spectrum-clear-button-icon-color-hover: var(--spectrum-neutral-content-color-hover);
+  --spectrum-clear-button-icon-color-down: var(--spectrum-neutral-content-color-down);
+  --spectrum-clear-button-icon-color-key-focus: var(--spectrum-neutral-content-color-key-focus);
+
+  block-size: var(--mod-clear-button-height, var(--spectrum-clear-button-height));
+  inline-size: var(--mod-clear-button-width, var(--spectrum-clear-button-width));
+  border-radius: 100%;
+  background-color: var(--mod-clear-button-background-color, transparent);
+  margin: 0;
+  padding: var(--mod-clear-button-padding, var(--spectrum-clear-button-padding));
+  border: none;
+  color: var(--mod-clear-button-icon-color, var(--spectrum-clear-button-icon-color));
+
+  &.clear-button--sm {
+    --spectrum-clear-button-height: var(--spectrum-component-height-75);
+    --spectrum-clear-button-width: var(--spectrum-component-height-75);
+  }
+
+  &.clear-button--lg {
+    --spectrum-clear-button-height: var(--spectrum-component-height-200);
+    --spectrum-clear-button-width: var(--spectrum-component-height-200);
+  }
+
+  &.clear-button--xl {
+    --spectrum-clear-button-height: var(--spectrum-component-height-300);
+    --spectrum-clear-button-width: var(--spectrum-component-height-300);
+  }
+
+  &.clear-button--quiet {
+    --mod-clear-button-background-color: transparent;
+    --mod-clear-button-background-color-hover: transparent;
+    --mod-clear-button-background-color-down: transparent;
+    --mod-clear-button-background-color-key-focus: transparent;
+  }
+
+  /* @deprecated .clear-button--over-background */
+  &.clear-button--white,
+  &.clear-button--over-background {
+    --mod-clear-button-icon-color: var(--spectrum-white);
+    --mod-clear-button-icon-color-hover: var(--spectrum-white);
+    --mod-clear-button-icon-color-down: var(--spectrum-white);
+    --mod-clear-button-icon-color-key-focus: var(--spectrum-white);
+    --mod-clear-button-background-color: transparent;
+    --mod-clear-button-background-color-hover: var(--spectrum-transparent-white-300);
+    --mod-clear-button-background-color-down: var(--spectrum-transparent-white-400);
+    --mod-clear-button-background-color-key-focus: var(--spectrum-transparent-white-300);
+  }
+
+  &:disabled,
+  &.is-disabled {
+    --mod-clear-button-icon-color: var(
+      --mod-clear-button-icon-color-disabled,
+      var(--spectrum-disabled-content-color)
+    );
+    --mod-clear-button-icon-color-hover: var(--spectrum-disabled-content-color);
+    --mod-clear-button-icon-color-down: var(--spectrum-disabled-content-color);
+    --mod-clear-button-background-color: var(
+      --mod-clear-button-background-color-disabled,
+      transparent
+    );
+
+    .clear-button-icon {
+      color: var(
+        --highcontrast-clear-button-icon-color-disabled,
+        var(
+          --mod-clear-button-icon-color-disabled,
+          var(--spectrum-clear-button-icon-color-disabled)
+        )
+      );
+    }
+  }
+
+  &.clear-button--white {
+    --spectrum-clear-button-icon-color-disabled: var(
+      --spectrum-disabled-static-white-content-color
+    );
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+
+  > .icon {
+    /* @safari10 Workaround for https://bugs.webkit.org/show_bug.cgi?id=169700 */
+    margin-block: 0;
+    margin-inline: auto;
+  }
+
+  &:not(:disabled):hover {
+    color: var(
+      --highcontrast-clear-button-icon-color-hover,
+      var(--mod-clear-button-icon-color-hover, var(--spectrum-clear-button-icon-color-hover))
+    );
+
+    .clear-button__fill {
+      background-color: var(
+        --mod-clear-button-background-color-hover,
+        var(--spectrum-clear-button-background-color-hover)
+      );
+    }
+  }
+
+  &:not(:disabled):active {
+    color: var(--mod-clear-button-icon-color-down, var(--spectrum-clear-button-icon-color-down));
+
+    .clear-button__fill {
+      background-color: var(
+        --mod-clear-button-background-color-down,
+        var(--spectrum-clear-button-background-color-down)
+      );
+    }
+  }
+
+  &:not(:disabled):focus-visible,
+  &:not(:disabled):focus-within {
+    color: var(
+      --mod-clear-button-icon-color-key-focus,
+      var(--spectrum-clear-button-icon-color-key-focus)
+    );
+
+    .clear-button__fill {
+      background-color: var(
+        --mod-clear-button-background-color-key-focus,
+        var(--spectrum-clear-button-background-color-key-focus)
+      );
+    }
+  }
+}

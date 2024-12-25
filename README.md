@@ -1,33 +1,53 @@
 # Prism UI
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+Components and tools to help developers work more efficiently, and make applications more cohesive.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+## Applications
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/next?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+### [Docs](./apps/docs/README.md)
 
-## Finish your CI setup
+Launches the developer documentation app and builds/serves the storybook server.
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/aItLrWJrYW)
+### [Home](./apps/home/README.md)
 
-## Run tasks
+Provides a landing page and serves as a frontend path router and proxy via path rewrites.
 
-To run the dev server for your app, use:
+### [Screenplay](./apps/screenplay/README.md)
+
+E2E test framework utilizing the [Screenplay pattern](https://serenity-js.org/handbook/design/screenplay-pattern/).
+
+## Libraries
+
+### [Content](./content/README.md)
+
+Static content assets, including fonts, images, and markdown pages.
+
+### [Theme](./libs/theme/README.md)
+
+Global theme styles and design tokens.
+
+### [Presets](./libs/presets/README.md) (coming soon)
+
+PostCSS, Tailwind, ESLint, Stylelint, Prettier, and Typescript presets.
+
+## Getting started
+
+This project is built and run using Nx. Nx is a powerful open-source build system that provides tools and techniques for enhancing developer productivity, optimizing CI performance, and maintaining code quality. Check out the [intro video](https://nx.dev/getting-started/why-nx) to learn more about what Nx is about.
+
+## Launch the application in dev mode
+
+To launch the dev server run `pnpm start` or:
 
 ```sh
-npx nx dev home
+nx run-many -t serve -p docs home
 ```
 
-To create a production bundle:
-
-```sh
-npx nx build home
-```
+To create a production bundle run `pnpm build`.
 
 To see all available targets to run for a project, run:
 
 ```sh
-npx nx show project home
+nx show project home
 ```
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
@@ -43,16 +63,16 @@ Use the plugin's generator to create new projects.
 To generate a new application, use:
 
 ```sh
-npx nx g @nx/next:app demo
+nx g @nx/next:app demo
 ```
 
 To generate a new library, use:
 
 ```sh
-npx nx g @nx/react:lib mylib
+nx g @nx/react:lib mylib
 ```
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+You can use `nx list` to get a list of installed plugins. Then, run `nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
 
 [Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 

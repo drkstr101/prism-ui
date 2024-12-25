@@ -13,6 +13,9 @@ permissions:
   actions: read
   contents: read
 
+env:
+  NX_BASE: starter
+
 jobs:
   main:
     runs-on: ubuntu-latest

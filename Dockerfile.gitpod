@@ -70,6 +70,8 @@ SHELL ["/usr/bin/bash", "-c"]
 # Create alias for nx binary
 RUN printf 'alias nx=node_modules/.bin/nx' >> ~/.bashrc
 
+ENV NX_BASE=starter
+
 # Install gems
 # RUN gem install rails rubocop solargraph htmlbeautifier
 

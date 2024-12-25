@@ -1,13 +1,6 @@
-/* Spectrum design tokens */
-
-@import url('@spectrum-css/tokens/dist/index.css');
-@import url('@spectrum-css/page/dist/index.css');
-
-/* Typefaces */
+@import url('tokens');
 @import url('fonts.css');
-
-/* Tailwind imports */
-
-@import url('tailwindcss/base.css');
-@import url('tailwindcss/components.css');
-@import url('tailwindcss/utilities.css');
+@import url('base');
+@import url('components');
+@import url('utilities.css');
+@import url('variants.css');
