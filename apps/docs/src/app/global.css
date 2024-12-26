@@ -1,7 +1,8 @@
 /* stylelint-disable no-descending-specificity */
 
-html, body {
-  @apply text-base text-neutral-content bg-background-base;
+html,
+body {
+  @apply text-neutral-content bg-background-base text-base;
 }
 
 a {
