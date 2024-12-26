@@ -4,10 +4,7 @@ import { type Config } from 'tailwindcss';
 
 module.exports = {
   content: [
-    join(
-      __dirname,
-      '{src,app,lib,components,pages,stories}/**/*!(*.spec).{cjs,mjs,js,jsx,ts,tsx,md,mdx,html}',
-    ),
+    join(__dirname, 'src/**/*!(*.spec).{cjs,mjs,js,jsx,ts,tsx,md,mdx,html}'),
     ...createGlobPatternsForDependencies(__dirname),
   ],
   theme: {

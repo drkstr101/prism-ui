@@ -2,6 +2,7 @@ import { withThemeByClassName } from '@storybook/addon-themes';
 import { Preview } from '@storybook/react';
 
 import '@apsphysics/prism-ui.theme/styles.css';
+import '../src/app/global.css';
 
 const preview: Preview = {
   parameters: {

@@ -4,7 +4,18 @@ import { join } from 'path';
 const config: StorybookConfig = {
   stories: ['../**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],
   addons: [
-    '@storybook/addon-essentials',
+    {
+      name: '@storybook/addon-essentials',
+      // Supported booleans: actions, controls, docs, toolbars, measure, outline.
+      options: {
+        // Don't need viewports b/c the medium/large contexts are used to support scaling.
+        // viewport: false,
+        // Don't need backgrounds b/c this is handled by the color contexts.
+        backgrounds: false,
+        // Configure separately
+        // docs: false,
+      },
+    },
     '@storybook/addon-interactions',
     '@storybook/addon-themes',
   ],

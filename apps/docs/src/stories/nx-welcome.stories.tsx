@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import DocsHero from '../components/docs-hero';
+import Index from '../app/page';
 
-type Story = StoryObj<typeof DocsHero>;
+type Story = StoryObj<typeof Index>;
 
 export const Composition: Story = {
   args: {},
@@ -9,6 +9,6 @@ export const Composition: Story = {
 
 export default {
   title: 'apsphysics.prism-ui/nx-welcome',
-  component: DocsHero,
+  component: Index,
   args: {},
-} satisfies Meta<typeof DocsHero>;
+} satisfies Meta<typeof Index>;
