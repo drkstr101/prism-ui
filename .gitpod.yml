@@ -16,12 +16,12 @@ tasks:
   - name: Setup
     init: |
       # gem install rails rubocop solargraph htmlbeautifier
-      pnpm install
-      pnpm e2e:setup
+      yarn install
+      yarn e2e:setup
       # pg_start
       gp sync-done setup
     openMode: split-left
   - name: Start
     init: gp sync-await setup
-    command: pnpm start
+    command: yarn start
     openMode: split-right

@@ -36,13 +36,13 @@ This project is built and run using Nx. Nx is a powerful open-source build syste
 
 ## Launch the application in dev mode
 
-To launch the dev server run `pnpm start` or:
+To launch the dev server run `yarn start` or:
 
 ```sh
 nx run-many -t serve -p docs home
 ```
 
-To create a production bundle run `pnpm build`.
+To create a production bundle run `yarn build`.
 
 To see all available targets to run for a project, run:
 
@@ -99,3 +99,15 @@ And join the Nx community:
 - [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
 - [Our Youtube channel](https://www.youtube.com/@nxdevtools)
 - [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+
+## TODO
+
+### Checkout dependency resolution warnings
+
+> YN0002: │ @apsphysics/prism-ui@workspace:. doesn't provide @typescript-eslint/parser (pc3b85), requested by @nx/eslint-plugin and other dependencies.
+
+> YN0002: │ @apsphysics/prism-ui@workspace:. doesn't provide playwright-core (pdfa7b), requested by @serenity-js/playwright.
+
+> YN0002: │ @apsphysics/prism-ui@workspace:. doesn't provide react-syntax-highlighter (pb6412), requested by @whitespace/storybook-addon-html.
+
+> YN0002: │ @apsphysics/prism-ui@workspace:. doesn't provide webpack (pd6de4), requested by swc-loader.

@@ -36,7 +36,7 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "npm.packageManager": "pnpm",
+  "npm.packageManager": "yarn",
   "typescript.tsdk": "./node_modules/typescript/lib",
   "eslint.run": "onSave",
   "eslint.nodePath": "./node_modules",
@@ -46,7 +46,7 @@
   "scss.validate": false,
   "stylelint.enable": true,
   "stylelint.validate": ["css", "scss", "postcss"],
-  "stylelint.packageManager": "pnpm",
+  "stylelint.packageManager": "yarn",
   "cSpell.words": [
     "haml",
     "htmlbeautifier",
