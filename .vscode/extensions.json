@@ -8,6 +8,7 @@
     "ms-playwright.playwright",
     "naumovs.color-highlight",
     "nrwl.angular-console",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "vitest.explorer"
   ]
 }

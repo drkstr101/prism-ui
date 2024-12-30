@@ -73,10 +73,10 @@
       }
     },
     "test": {
-      "executor": "@nx/jest:jest",
+      "executor": "@nx/vite:test",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/docs/jest.config.ts"
+        "configFile": "apps/docs/vitest.config.ts"
       }
     },
     "lint": {
