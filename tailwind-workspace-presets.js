@@ -52,9 +52,8 @@ module.exports = {
       },
       /** https://spectrum.adobe.com/page/typography/*/
       fontFamily: {
-        sans: 'var(--spectrum-sans-serif-font-family)',
-        serif: 'var(--spectrum-serif-font-family)',
-        code: 'var(--spectrum-code-font-family)',
+        sans: 'var(--spectrum-sans-serif-font-family, adobe-clean)',
+        mono: 'var(--spectrum-code-font-family, source-code-pro)',
       },
       /** https://spectrum.adobe.com/page/typography/#Font-sizes */
       fontSize: {

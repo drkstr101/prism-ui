@@ -725,7 +725,7 @@
   --spectrum-serif-font-family-stack: adobe-clean-serif, var(--spectrum-serif-font-family),
     'Source Serif Pro', georgia, serif;
   --spectrum-serif-font: var(--spectrum-serif-font-family-stack);
-  --spectrum-code-font-family-stack: 'Source Code Pro', monaco, monospace;
+  --spectrum-code-font-family-stack: source-code-pro, monaco, monospace;
   --spectrum-font-family-ar: myriad-arabic, adobe-clean, 'Source Sans Pro', -apple-system,
     blinkmacsystemfont, 'Segoe UI', roboto, ubuntu, 'Trebuchet MS', 'Lucida Grande', sans-serif;
   --spectrum-font-family-he: myriad-hebrew, adobe-clean, 'Source Sans Pro', -apple-system,

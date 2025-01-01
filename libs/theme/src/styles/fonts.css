@@ -16,13 +16,15 @@
  *   - http://typekit.com/eulas/000000000000000000017705
  *   - http://typekit.com/eulas/000000000000000000017700
  *   - http://typekit.com/eulas/00000000000000003b9ada96
- * adobe-clean-semilight:
- *   - http://typekit.com/eulas/000000000000000000014fc1
- *   - http://typekit.com/eulas/000000000000000000014fc2
- *
+ * source-code-pro:
+ *   - http://typekit.com/eulas/00000000000000007758ce1a
+ *   - http://typekit.com/eulas/00000000000000007758ce1d
+ *   - http://typekit.com/eulas/00000000000000007758ce21
+ *   - http://typekit.com/eulas/00000000000000007758ce23
  */
 
 @import url('https://p.typekit.net/p.css?s=1&k=evk7lzt&ht=tk&f=7180.7181.7182.7183.7184.7185.22474.22475.22476.22477.28180.22795.22796&a=30039154&app=typekit&e=css');
+@import url('https://p.typekit.net/p.css?s=1&k=ivu4xcy&ht=tk&f=17451.17454.25775.25777&a=68826617&app=typekit&e=css');
 
 @font-face {
   font-family: adobe-clean;
@@ -183,45 +185,65 @@
  ************************************/
 
 @font-face {
-  font-family: 'Source Code Pro';
+  font-family: source-code-pro, monospace;
   src:
-    local('Source Code Pro Bold'),
-    local('SourceCodePro-Bold'),
-    url('fonts/SourceCodePro-Bold.woff2') format('woff2');
-  font-weight: bold;
+    url('https://use.typekit.net/af/78baf5/00000000000000007758ce1a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/78baf5/00000000000000007758ce1a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/78baf5/00000000000000007758ce1a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('opentype');
+  font-display: swap;
   font-style: normal;
-  font-display: swap;
+  font-weight: 700;
+  font-stretch: normal;
 }
 
 @font-face {
-  font-family: 'Source Code Pro';
+  font-family: source-code-pro, monospace;
   src:
-    local('Source Code Pro Italic'),
-    local('SourceCodePro-It'),
-    url('fonts/SourceCodePro-It.woff2') format('woff2');
-  font-weight: normal;
-  font-style: italic;
+    url('https://use.typekit.net/af/9560cd/00000000000000007758ce1d/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/9560cd/00000000000000007758ce1d/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/9560cd/00000000000000007758ce1d/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('opentype');
   font-display: swap;
-}
-
-@font-face {
-  font-family: 'Source Code Pro';
-  src:
-    local('Source Code Pro'),
-    local('SourceCodePro-Regular'),
-    url('fonts/SourceCodePro-Regular.woff2') format('woff2');
-  font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
 }
 
 @font-face {
-  font-family: 'Source Code Pro';
+  font-family: source-code-pro, monospace;
   src:
-    local('Source Code Pro Bold Italic'),
-    local('SourceCodePro-BoldIt'),
-    url('fonts/SourceCodePro-BoldIt.woff2') format('woff2');
-  font-weight: bold;
-  font-style: italic;
+    url('https://use.typekit.net/af/423d57/00000000000000007758ce21/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/423d57/00000000000000007758ce21/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/423d57/00000000000000007758ce21/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+      format('opentype');
   font-display: swap;
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: source-code-pro, monospace;
+  src:
+    url('https://use.typekit.net/af/b7bacf/00000000000000007758ce23/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/b7bacf/00000000000000007758ce23/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/b7bacf/00000000000000007758ce23/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+.tk-source-code-pro {
+  font-family: source-code-pro, monospace;
 }
