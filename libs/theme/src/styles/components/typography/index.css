@@ -1,0 +1,116 @@
+@import url('body.css') layer(components);
+@import url('code.css') layer(components);
+@import url('detail.css') layer(components);
+@import url('divider.css') layer(components);
+@import url('heading.css') layer(components);
+@import url('link.css') layer(components);
+
+@layer components {
+  .typography {
+    @apply prose text-neutral-content max-w-none;
+
+    blockquote {
+      @apply text-neutral-content;
+    }
+
+    p {
+      @apply body body--md;
+
+      margin-top: var(--spectrum-spacing-100);
+      margin-bottom: var(--spectrum-spacing-300);
+    }
+
+    a {
+      @apply link;
+    }
+
+    h1 {
+      @apply heading heading--2xl;
+    }
+
+    h2 {
+      @apply heading heading--xl;
+    }
+
+    h3 {
+      @apply heading heading--lg;
+    }
+
+    h4 {
+      @apply heading heading--md;
+    }
+
+    h5 {
+      @apply heading heading--sm;
+    }
+
+    h6 {
+      @apply heading heading--xs;
+    }
+
+    [class~='lead'] {
+      @apply body body--xl;
+
+      margin-top: var(--spectrum-spacing-100);
+      margin-bottom: var(--spectrum-spacing-400);
+    }
+
+    [class~='detail'] {
+      @apply detail text-neutral-subdued-content;
+    }
+
+    hr {
+      @apply divider;
+
+      margin-top: var(--spectrum-spacing-100);
+      margin-bottom: var(--spectrum-spacing-200);
+    }
+
+    li {
+      margin-top: var(--spectrum-body-margin);
+      margin-bottom: var(--spectrum-body-margin);
+      font-family: var(
+        --mod-body-sans-serif-font-family,
+        var(--spectrum-body-sans-serif-font-family)
+      );
+      font-style: var(
+        --mod-body-sans-serif-font-style,
+        var(--spectrum-body-sans-serif-font-style)
+      );
+      font-weight: var(
+        --mod-body-sans-serif-font-weight,
+        var(--spectrum-body-sans-serif-font-weight)
+      );
+      font-size: var(--mod-body-font-size, var(--spectrum-body-font-size));
+
+      /* color: var(--highcontrast-body-font-color, var(--mod-body-font-color, var(--spectrum-body-font-color))); */
+      line-height: var(--mod-body-line-height, var(--spectrum-body-line-height));
+    }
+
+    ul ul,
+    ul ol,
+    ol ul,
+    ol ol {
+      @apply text-neutral-content;
+
+      margin-top: var(--spectrum-body-margin);
+      margin-bottom: var(--spectrum-body-margin);
+    }
+
+    /* Add margin when inside a Typography component */
+
+    /* .heading {
+      margin-block: var(--mod-heading-margin-start, var(--spectrum-heading-margin-start))
+        var(--mod-heading-margin-end, var(--spectrum-heading-margin-end));
+    } */
+
+    /* .body {
+      margin-block-end: var(--mod-body-margin, var(--spectrum-body-margin));
+    } */
+
+    /* .detail {
+      margin-block: var(--mod-detail-margin-start, var(--spectrum-detail-margin-start))
+        var(--mod-detail-margin-end, var(--spectrum-detail-margin-end));
+    } */
+  }
+}

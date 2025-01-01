@@ -1,0 +1,157 @@
+/********************************
+* Detail
+********************************/
+
+/* Detail tokens */
+.detail {
+  --spectrum-detail-sans-serif-font-family: var(--spectrum-sans-font-family-stack);
+  --spectrum-detail-serif-font-family: var(--spectrum-serif-font-family-stack);
+  --spectrum-detail-cjk-font-family: var(--spectrum-cjk-font-family-stack);
+  --spectrum-detail-margin-start: calc(
+    var(--mod-detail-font-size, var(--spectrum-detail-font-size)) *
+      var(--spectrum-detail-margin-top-multiplier)
+  );
+  --spectrum-detail-margin-end: calc(
+    var(--mod-detail-font-size, var(--spectrum-detail-font-size)) *
+      var(--spectrum-detail-margin-bottom-multiplier)
+  );
+  --spectrum-detail-font-color: var(--spectrum-detail-color);
+}
+
+/* Windows high contrast mode */
+@media (forced-colors: active) {
+  .detail {
+    --highcontrast-detail-font-color: text;
+  }
+}
+
+/* Detail t-shirt sizes */
+.detail--sm {
+  --spectrum-detail-font-size: var(--spectrum-detail-size-s);
+}
+
+.detail--md {
+  --spectrum-detail-font-size: var(--spectrum-detail-size-m);
+}
+
+.detail--lg {
+  --spectrum-detail-font-size: var(--spectrum-detail-size-l);
+}
+
+.detail--xl {
+  --spectrum-detail-font-size: var(--spectrum-detail-size-xl);
+}
+
+/* Detail styles */
+/* stylelint-disable-next-line no-duplicate-selectors */
+.detail {
+  font-family: var(
+    --mod-detail-sans-serif-font-family,
+    var(--spectrum-detail-sans-serif-font-family)
+  );
+  font-style: var(
+    --mod-detail-sans-serif-font-style,
+    var(--spectrum-detail-sans-serif-font-style)
+  );
+  font-weight: var(
+    --mod-detail-sans-serif-font-weight,
+    var(--spectrum-detail-sans-serif-font-weight)
+  );
+  font-size: var(--mod-detail-font-size, var(--spectrum-detail-font-size));
+  margin-block: 0;
+  color: var(
+    --highcontrast-detail-font-color,
+    var(--mod-detail-font-color, var(--spectrum-detail-font-color))
+  );
+  line-height: var(--mod-detail-line-height, var(--spectrum-detail-line-height));
+  letter-spacing: var(--mod-detail-letter-spacing, var(--spectrum-detail-letter-spacing));
+  text-transform: uppercase;
+
+  strong,
+  .detail--strong {
+    font-style: var(
+      --mod-detail-sans-serif-strong-font-style,
+      var(--spectrum-detail-sans-serif-strong-font-style)
+    );
+    font-weight: var(
+      --mod-detail-sans-serif-strong-font-weight,
+      var(--spectrum-detail-sans-serif-strong-font-weight)
+    );
+  }
+
+  em,
+  .detail--em {
+    font-style: var(
+      --mod-detail-sans-serif-emphasized-font-style,
+      var(--spectrum-detail-sans-serif-emphasized-font-style)
+    );
+    font-weight: var(
+      --mod-detail-sans-serif-emphasized-font-weight,
+      var(--spectrum-detail-sans-serif-emphasized-font-weight)
+    );
+  }
+
+  .detail--strong.detail--em,
+  em strong,
+  strong em {
+    font-style: var(
+      --mod-detail-sans-serif-strong-emphasized-font-style,
+      var(--spectrum-detail-sans-serif-strong-emphasized-font-style)
+    );
+    font-weight: var(
+      --mod-detail-sans-serif-strong-emphasized-font-weight,
+      var(--spectrum-detail-sans-serif-strong-emphasized-font-weight)
+    );
+  }
+}
+
+/* Detail - Light  */
+.detail--light {
+  font-style: var(
+    --mod-detail-sans-serif-light-font-style,
+    var(--spectrum-detail-sans-serif-light-font-style)
+  );
+  font-weight: var(
+    --spectrum-detail-sans-serif-light-font-weight,
+    var(--spectrum-detail-sans-serif-light-font-weight)
+  );
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  strong,
+  .detail--strong {
+    font-style: var(
+      --mod-detail-sans-serif-light-strong-font-style,
+      var(--spectrum-detail-sans-serif-light-strong-font-style)
+    );
+    font-weight: var(
+      --mod-detail-sans-serif-light-strong-font-weight,
+      var(--spectrum-detail-sans-serif-light-strong-font-weight)
+    );
+  }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  em,
+  .detail--em {
+    font-style: var(
+      --mod-detail-sans-serif-light-emphasized-font-style,
+      var(--spectrum-detail-sans-serif-light-emphasized-font-style)
+    );
+    font-weight: var(
+      --mod-detail-sans-serif-light-emphasized-font-weight,
+      var(--spectrum-detail-sans-serif-light-emphasized-font-weight)
+    );
+  }
+
+  .detail--strong.body--em,
+  em strong,
+  strong em {
+    font-style: var(
+      --mod-detail-sans-serif-light-strong-emphasized-font-style,
+      var(--spectrum-detail-sans-serif-light-strong-emphasized-font-style)
+    );
+    font-weight: var(
+      --mod-detail-sans-serif-light-strong-emphasized-font-weight,
+      var(--spectrum-detail-sans-serif-light-strong-emphasized-font-weight)
+    );
+  }
+}

@@ -1,0 +1,227 @@
+/********************************
+* Heading
+********************************/
+
+/* Heading tokens */
+.heading {
+  --spectrum-heading-sans-serif-font-family: var(--spectrum-sans-font-family-stack);
+  --spectrum-heading-serif-font-family: var(--spectrum-serif-font-family-stack);
+  --spectrum-heading-cjk-font-family: var(--spectrum-cjk-font-family-stack);
+  --spectrum-heading-cjk-letter-spacing: var(--spectrum-cjk-letter-spacing);
+  --spectrum-heading-font-color: var(--spectrum-heading-color);
+  --spectrum-heading-margin-start: calc(
+    var(--mod-heading-font-size, var(--spectrum-heading-font-size)) *
+      var(--spectrum-heading-margin-top-multiplier)
+  );
+  --spectrum-heading-margin-end: calc(
+    var(--mod-heading-font-size, var(--spectrum-heading-font-size)) *
+      var(--spectrum-heading-margin-bottom-multiplier)
+  );
+}
+
+/* Windows high contrast mode */
+@media (forced-colors: active) {
+  .heading {
+    --highcontrast-heading-font-color: text;
+  }
+}
+
+/* Heading t-shirt sizes */
+
+.heading--xs {
+  --spectrum-heading-font-size: var(--spectrum-heading-size-xs);
+  --spectrum-heading-cjk-font-size: var(--spectrum-heading-cjk-size-xs);
+}
+
+.heading--sm {
+  --spectrum-heading-font-size: var(--spectrum-heading-size-s);
+  --spectrum-heading-cjk-font-size: var(--spectrum-heading-cjk-size-s);
+}
+
+.heading--md {
+  --spectrum-heading-font-size: var(--spectrum-heading-size-m);
+  --spectrum-heading-cjk-font-size: var(--spectrum-heading-cjk-size-m);
+}
+
+.heading--lg {
+  --spectrum-heading-font-size: var(--spectrum-heading-size-l);
+  --spectrum-heading-cjk-font-size: var(--spectrum-heading-cjk-size-l);
+}
+
+.heading--xl {
+  --spectrum-heading-font-size: var(--spectrum-heading-size-xl);
+  --spectrum-heading-cjk-font-size: var(--spectrum-heading-cjk-size-xl);
+}
+
+.heading--2xl {
+  --spectrum-heading-font-size: var(--spectrum-heading-size-xxl);
+  --spectrum-heading-cjk-font-size: var(--spectrum-heading-cjk-size-xxl);
+}
+
+.heading--3xl {
+  --spectrum-heading-font-size: var(--spectrum-heading-size-xxxl);
+  --spectrum-heading-cjk-font-size: var(--spectrum-heading-cjk-size-xxxl);
+}
+
+/* Heading styles */
+/* stylelint-disable-next-line no-duplicate-selectors */
+.heading {
+  font-family: var(
+    --mod-heading-sans-serif-font-family,
+    var(--spectrum-heading-sans-serif-font-family)
+  );
+  font-style: var(
+    --mod-heading-sans-serif-font-style,
+    var(--spectrum-heading-sans-serif-font-style)
+  );
+  font-weight: var(
+    --mod-heading-sans-serif-font-weight,
+    var(--spectrum-heading-sans-serif-font-weight)
+  );
+  font-size: var(--mod-heading-font-size, var(--spectrum-heading-font-size));
+  color: var(
+    --highcontrast-heading-font-color,
+    var(--mod-heading-font-color, var(--spectrum-heading-font-color))
+  );
+  line-height: var(--mod-heading-line-height, var(--spectrum-heading-line-height));
+  margin-block: 0;
+
+  strong,
+  .heading--strong {
+    font-style: var(
+      --mod-heading-sans-serif-strong-font-style,
+      var(--spectrum-heading-sans-serif-strong-font-style)
+    );
+    font-weight: var(
+      --mod-heading-sans-serif-strong-font-weight,
+      var(--spectrum-heading-sans-serif-strong-font-weight)
+    );
+  }
+
+  em,
+  .heading--em {
+    font-style: var(
+      --mod-heading-sans-serif-emphasized-font-style,
+      var(--spectrum-heading-sans-serif-emphasized-font-style)
+    );
+    font-weight: var(
+      --mod-heading-sans-serif-emphasized-font-weight,
+      var(--spectrum-heading-sans-serif-emphasized-font-weight)
+    );
+  }
+
+  .heading--strong.heading--em,
+  strong em,
+  em strong {
+    font-style: var(
+      --mod-heading-sans-serif-strong-emphasized-font-style,
+      var(--spectrum-heading-sans-serif-strong-emphasized-font-style)
+    );
+    font-weight: var(
+      --mod-heading-sans-serif-strong-emphasized-font-weight,
+      var(--spectrum-heading-sans-serif-strong-emphasized-font-weight)
+    );
+  }
+}
+
+/* Heading - Heavy */
+.heading--heavy {
+  font-style: var(
+    --mod-heading-sans-serif-heavy-font-style,
+    var(--spectrum-heading-sans-serif-heavy-font-style)
+  );
+  font-weight: var(
+    --mod-heading-sans-serif-heavy-font-weight,
+    var(--spectrum-heading-sans-serif-heavy-font-weight)
+  );
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  strong,
+  .heading--strong {
+    font-style: var(
+      --mod-heading-sans-serif-heavy-strong-font-style,
+      var(--spectrum-heading-sans-serif-heavy-strong-font-style)
+    );
+    font-weight: var(
+      --mod-heading-sans-serif-heavy-strong-font-weight,
+      var(--spectrum-heading-sans-serif-heavy-strong-font-weight)
+    );
+  }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  em,
+  .heading--em {
+    font-style: var(
+      --mod-heading-sans-serif-heavy-emphasized-font-style,
+      var(--spectrum-heading-sans-serif-heavy-emphasized-font-style)
+    );
+    font-weight: var(
+      --mod-heading-sans-serif-heavy-emphasized-font-weight,
+      var(--spectrum-heading-sans-serif-heavy-emphasized-font-weight)
+    );
+  }
+
+  .heading--strong.heading--em,
+  strong em,
+  em strong {
+    font-style: var(
+      --mod-heading-sans-serif-heavy-strong-emphasized-font-style,
+      var(--spectrum-heading-sans-serif-heavy-strong-emphasized-font-style)
+    );
+    font-weight: var(
+      --mod-heading-sans-serif-heavy-strong-emphasized-font-weight,
+      var(--spectrum-heading-sans-serif-heavy-strong-emphasized-font-weight)
+    );
+  }
+}
+
+/* Heading - Light */
+.heading--light {
+  font-style: var(
+    --mod-heading-sans-serif-light-font-style,
+    var(--spectrum-heading-sans-serif-light-font-style)
+  );
+  font-weight: var(
+    --mod-heading-sans-serif-light-font-weight,
+    var(--spectrum-heading-sans-serif-light-font-weight)
+  );
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  em,
+  .heading--em {
+    font-style: var(
+      --mod-heading-sans-serif-light-emphasized-font-style,
+      var(--spectrum-heading-sans-serif-light-emphasized-font-style)
+    );
+    font-weight: var(
+      --mod-heading-sans-serif-light-emphasized-font-weight,
+      var(--spectrum-heading-sans-serif-light-emphasized-font-weight)
+    );
+  }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  strong,
+  .heading--strong {
+    font-style: var(
+      --mod-heading-sans-serif-light-strong-font-style,
+      var(--spectrum-heading-sans-serif-light-strong-font-style)
+    );
+    font-weight: var(
+      --mod-heading-sans-serif-light-strong-font-weight,
+      var(--spectrum-heading-sans-serif-light-strong-font-weight)
+    );
+  }
+
+  .heading--strong.heading--em,
+  strong em,
+  em strong {
+    font-style: var(
+      --mod-heading-sans-serif-light-strong-emphasized-font-style,
+      var(--spectrum-heading-sans-serif-light-strong-emphasized-font-style)
+    );
+    font-weight: var(
+      --mod-heading-sans-serif-light-strong-emphasized-font-weight,
+      var(--spectrum-heading-sans-serif-light-strong-emphasized-font-weight)
+    );
+  }
+}

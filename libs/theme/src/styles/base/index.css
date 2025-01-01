@@ -1,15 +1,38 @@
 @import url('tailwindcss/base.css');
-@import url('basebutton.css') layer(base);
-@import url('overlay.css') layer(base);
+
+/* @import url('basebutton.css') layer(base);
+@import url('overlay.css') layer(base); */
 
 @layer base {
   html,
-  body,
-  prism-app {
-    @apply h-full;
+  body {
+    @apply bg-background-base text-neutral-content h-full font-sans text-base;
   }
 
   [inert] ::-webkit-scrollbar {
     display: none;
+  }
+
+  /* Typography - Default */
+  .prism {
+    --spectrum-font-family-ar: myriad-arabic, adobe-clean, 'Source Sans Pro', -apple-system,
+      blinkmacsystemfont, 'Segoe UI', roboto, ubuntu, 'Trebuchet MS', 'Lucida Grande', sans-serif;
+    --spectrum-font-family-he: myriad-hebrew, adobe-clean, 'Source Sans Pro', -apple-system,
+      blinkmacsystemfont, 'Segoe UI', roboto, ubuntu, 'Trebuchet MS', 'Lucida Grande', sans-serif;
+    --spectrum-font-family: var(--spectrum-sans-font-family-stack);
+    --spectrum-font-style: var(--spectrum-default-font-style);
+    --spectrum-font-size: var(--spectrum-font-size-100);
+
+    font-family: var(--spectrum-font-family);
+    font-style: var(--spectrum-font-style);
+    font-size: var(--spectrum-font-size);
+
+    &:lang(ar) {
+      font-family: var(--spectrum-font-family-ar);
+    }
+
+    &:lang(he) {
+      font-family: var(--spectrum-font-family-he);
+    }
   }
 }
