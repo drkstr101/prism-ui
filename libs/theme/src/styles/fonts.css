@@ -1,163 +1,181 @@
-/************************************
- * Adobe Clean (sans)
- ************************************/
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * adobe-clean:
+ *   - http://typekit.com/eulas/000000000000000000017701
+ *   - http://typekit.com/eulas/000000000000000000017702
+ *   - http://typekit.com/eulas/000000000000000000017703
+ *   - http://typekit.com/eulas/000000000000000000017708
+ *   - http://typekit.com/eulas/0000000000000000000176ff
+ *   - http://typekit.com/eulas/000000000000000000017704
+ *   - http://typekit.com/eulas/000000000000000000017706
+ *   - http://typekit.com/eulas/000000000000000000017707
+ *   - http://typekit.com/eulas/000000000000000000017705
+ *   - http://typekit.com/eulas/000000000000000000017700
+ *   - http://typekit.com/eulas/00000000000000003b9ada96
+ * adobe-clean-semilight:
+ *   - http://typekit.com/eulas/000000000000000000014fc1
+ *   - http://typekit.com/eulas/000000000000000000014fc2
+ *
+ */
+
+@import url('https://p.typekit.net/p.css?s=1&k=evk7lzt&ht=tk&f=7180.7181.7182.7183.7184.7185.22474.22475.22476.22477.28180.22795.22796&a=30039154&app=typekit&e=css');
 
 @font-face {
-  font-family: 'Adobe Clean';
+  font-family: adobe-clean;
   src:
-    local('Adobe Clean Bold'),
-    local('AdobeClean-Bold'),
-    url('fonts/subset-AdobeClean-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
+    url('https://use.typekit.net/af/cb695f/000000000000000000017701/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/cb695f/000000000000000000017701/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/cb695f/000000000000000000017701/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('opentype');
   font-display: swap;
+  font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Adobe Clean';
+  font-family: adobe-clean;
   src:
-    local('Adobe Clean Black Italic'),
-    local('AdobeClean-BlackIt'),
-    url('fonts/subset-AdobeClean-BlackIt.woff2') format('woff2');
+    url('https://use.typekit.net/af/74ffb1/000000000000000000017702/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/74ffb1/000000000000000000017702/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/74ffb1/000000000000000000017702/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: adobe-clean;
+  src:
+    url('https://use.typekit.net/af/eaf09c/000000000000000000017703/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/eaf09c/000000000000000000017703/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/eaf09c/000000000000000000017703/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: adobe-clean;
+  src:
+    url('https://use.typekit.net/af/a9f5e6/000000000000000000017708/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/a9f5e6/000000000000000000017708/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/a9f5e6/000000000000000000017708/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: adobe-clean;
+  src:
+    url('https://use.typekit.net/af/84be24/000000000000000000014fc1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/84be24/000000000000000000014fc1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/84be24/000000000000000000014fc1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: adobe-clean;
+  src:
+    url('https://use.typekit.net/af/a2527e/000000000000000000017704/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/a2527e/000000000000000000017704/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/a2527e/000000000000000000017704/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: adobe-clean;
+  src:
+    url('https://use.typekit.net/af/4b3e87/000000000000000000017706/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/4b3e87/000000000000000000017706/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/4b3e87/000000000000000000017706/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: normal;
   font-weight: 900;
+}
+
+@font-face {
+  font-family: adobe-clean;
+  src:
+    url('https://use.typekit.net/af/f83687/000000000000000000017707/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/f83687/000000000000000000017707/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/f83687/000000000000000000017707/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3')
+      format('opentype');
+  font-display: swap;
   font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Adobe Clean';
-  src:
-    local('Adobe Clean Bold Italic'),
-    local('AdobeClean-BoldIt'),
-    url('fonts/subset-AdobeClean-BoldIt.woff2') format('woff2');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Adobe Clean';
-  src:
-    local('Adobe Clean Italic'),
-    local('AdobeClean-It'),
-    url('fonts/subset-AdobeClean-It.woff2') format('woff2');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Adobe Clean';
-  src:
-    local('Adobe Clean'),
-    local('AdobeClean-Regular'),
-    url('fonts/subset-AdobeClean-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Adobe Clean';
-  src:
-    local('Adobe Clean Medium'),
-    local('AdobeClean-Medium'),
-    url('fonts/subset-AdobeClean-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-/************************************
- * Adobe Clean (serif)
- ************************************/
-
-@font-face {
-  font-family: 'Adobe Clean Serif';
-  src:
-    local('Adobe Clean Serif Bold'),
-    local('AdobeCleanSerif-Bold'),
-    url('fonts/subset-AdobeCleanSerif-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Adobe Clean Serif';
-  src:
-    local('Adobe Clean Serif Black Italic'),
-    local('AdobeCleanSerif-BlackIt'),
-    url('fonts/subset-AdobeCleanSerif-BlackIt.woff2') format('woff2');
   font-weight: 900;
-  font-style: italic;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Adobe Clean Serif';
+  font-family: adobe-clean;
   src:
-    local('Adobe Clean Serif Italic'),
-    local('AdobeCleanSerif-It'),
-    url('fonts/subset-AdobeCleanSerif-It.woff2') format('woff2');
-  font-weight: normal;
+    url('https://use.typekit.net/af/b3ff72/000000000000000000017705/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/b3ff72/000000000000000000017705/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/b3ff72/000000000000000000017705/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3')
+      format('opentype');
+  font-display: auto;
   font-style: italic;
-  font-display: swap;
+  font-weight: 800;
 }
 
 @font-face {
-  font-family: 'Adobe Clean Serif';
+  font-family: adobe-clean;
   src:
-    local('Adobe Clean Serif Medium'),
-    local('AdobeCleanSerif-Medium'),
-    url('fonts/subset-AdobeCleanSerif-Medium.woff2') format('woff2');
+    url('https://use.typekit.net/af/c927e3/000000000000000000014fc2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/c927e3/000000000000000000014fc2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/c927e3/000000000000000000014fc2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: adobe-clean;
+  src:
+    url('https://use.typekit.net/af/2468ba/00000000000000003b9ada96/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/2468ba/00000000000000003b9ada96/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/2468ba/00000000000000003b9ada96/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
   font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Adobe Clean Serif';
-  src:
-    local('Adobe Clean Serif Black'),
-    local('AdobeCleanSerif-Black'),
-    url('fonts/subset-AdobeCleanSerif-Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Adobe Clean Serif';
-  src:
-    local('Adobe Clean Serif Bold Italic'),
-    local('AdobeCleanSerif-BoldIt'),
-    url('fonts/subset-AdobeCleanSerif-BoldIt.woff2') format('woff2');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Adobe Clean Serif';
-  src:
-    local('Adobe Clean Serif Medium Italic'),
-    local('AdobeCleanSerif-MediumIt'),
-    url('fonts/subset-AdobeCleanSerif-MediumIt.woff2') format('woff2');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Adobe Clean Serif';
-  src:
-    local('Adobe Clean Serif'),
-    local('AdobeCleanSerif-Regular'),
-    url('fonts/subset-AdobeCleanSerif-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }
 
 /************************************
