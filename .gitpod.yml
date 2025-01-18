@@ -15,7 +15,7 @@ ports:
 tasks:
   - name: Setup
     init: |
-      scripts/setup
+      scripts/setup --db-cmd pg_start
       yarn install
       yarn e2e:setup
       gp sync-done setup

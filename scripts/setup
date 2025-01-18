@@ -15,8 +15,10 @@ if [[ $BASH_VERSINFO -lt 4 ]]; then
 fi
 
 function main() {
-  local flags
+  local pg_cmd
   local os arch
+
+  db_cmd="echo 'No database command provided'"
 
   while [[ "${#}" != 0 ]]; do
     case "${1}" in
@@ -25,6 +27,11 @@ function main() {
       usage
       exit 0
       ;;
+
+    --db-cmd | -d)
+        db_cmd="${2}"
+        shift 2
+        ;;
 
     "")
       # skip if the argument is empty
@@ -40,19 +47,19 @@ function main() {
   os=$(tools::os)
   arch=$(tools::arch)
 
-  print::title "~~~> Running setup for os=${os} arch=${arch}\n--------------------------------------"
+  print::title "Running setup for os=${os} arch=${arch}"
 
-  print::title "\n~~~> Installing global ruby gems"
-  gem install rails rubocop solargraph htmlbeautifier
+  # print::title "\n~~~> Installing global ruby gems"
+  # gem install rails rubocop solargraph htmlbeautifier
 
   # TODO: Add an optional --skip-pg-start flag to skip this step
-  print::title "\n~~~> Starting local postgres service"
-  pg_start
+  print::title "~~~> Starting local database service"
+  bash -c "${db_cmd}"
 
-  # print::title "\n~~~> Installing bit into ${BIN_DIR}"
-  # tools::bit::install --directory "${BIN_DIR}"
+  print::title "~~~> Installing bit into ${BIN_DIR}"
+  tools::bit::install --directory "${BIN_DIR}"
 
-  print::success "--------------------------------------\n~~~> Setup complete."
+  print::success "\nSetup complete."
 }
 
 function usage() {
@@ -63,6 +70,7 @@ Install tools and frameworks into the local development environment.
 
 OPTIONS
   --help       -h   prints the command usage
+  --db-cmd     -d   prints the command usage
 USAGE
 }
 
