@@ -58,3 +58,7 @@ storybook-static
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Bit
+/.bit
+/public
