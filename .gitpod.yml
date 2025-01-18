@@ -15,10 +15,9 @@ ports:
 tasks:
   - name: Setup
     init: |
-      # gem install rails rubocop solargraph htmlbeautifier
+      scripts/setup
       yarn install
       yarn e2e:setup
-      # pg_start
       gp sync-done setup
     openMode: split-left
   - name: Start
