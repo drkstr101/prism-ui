@@ -3,19 +3,17 @@
 set -eu
 set -o pipefail
 
-readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-readonly ROOT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
-readonly BIN_DIR="$(cd "${HOME}/bin" && pwd)"
+readonly BIN_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+readonly ROOT_DIR="$(cd "${BIN_DIR}/.." && pwd)"
 
-# shellcheck source=SCRIPTDIR/util.sh
-source "${SCRIPT_DIR}/util.sh"
+source "${ROOT_DIR}/libs/script/shell-utils.bash"
 
 if [[ $BASH_VERSINFO -lt 4 ]]; then
   print::error "Before running this script please update Bash to v4 or higher (e.g.: \$ sudo apt install bash)"
 fi
 
 function main() {
-  local pg_cmd
+  local db_cmd
   local os arch
 
   db_cmd="echo 'No database command provided'"
@@ -29,9 +27,9 @@ function main() {
       ;;
 
     --db-cmd | -d)
-        db_cmd="${2}"
-        shift 2
-        ;;
+      db_cmd="${2}"
+      shift 2
+      ;;
 
     "")
       # skip if the argument is empty
@@ -57,7 +55,7 @@ function main() {
   bash -c "${db_cmd}"
 
   print::title "~~~> Installing bit into ${BIN_DIR}"
-  tools::bit::install --directory "${BIN_DIR}"
+  install::bit
 
   print::success "\nSetup complete."
 }
