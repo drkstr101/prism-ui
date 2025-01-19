@@ -2,7 +2,6 @@ import { withThemeByClassName } from '@storybook/addon-themes';
 import { Preview } from '@storybook/react';
 
 import '@apsphysics/prism-ui.theme/styles.css';
-import '../app/global.css';
 
 const preview: Preview = {
   parameters: {
@@ -22,11 +21,6 @@ const preview: Preview = {
       },
       defaultTheme: 'light',
     }),
-    // (Story) => (
-    //   <article className="bg-background-base p-3">
-    //     <Story />
-    //   </article>
-    // ),
   ],
 };
 

@@ -10,7 +10,7 @@ import {
 } from './typography.composition';
 
 const meta: Meta<typeof TypographyComposition> = {
-  title: 'apsphysics.prism-ui/theme/typography',
+  title: 'apsphysics.prism/theme/typography',
   component: (props: Props) => <div {...props}></div>,
   args: {},
 };

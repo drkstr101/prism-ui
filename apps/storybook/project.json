@@ -1,0 +1,49 @@
+{
+  "name": "storybook",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/storybook/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/storybook:storybook",
+      "options": {
+        "port": 3000,
+        "configDir": "apps/storybook/.storybook",
+        "docsMode": true,
+        "open": false
+      },
+      "configurations": {
+        "development": {
+          "quiet": false,
+          "webpackStatsJson": true,
+          "debugWebpack": true
+        }
+      }
+    },
+    "build": {
+      "executor": "@nx/storybook:build",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/apps/storybook",
+        "configDir": "apps/storybook/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/storybook/**/*.css"]
+      }
+    }
+  }
+}

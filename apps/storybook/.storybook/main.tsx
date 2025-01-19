@@ -2,7 +2,7 @@ import type { StorybookConfig } from '@storybook/react-vite';
 import { join } from 'path';
 
 const config: StorybookConfig = {
-  stories: ['../**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],
+  stories: ['../src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],
   addons: [
     {
       name: '@storybook/addon-essentials',
@@ -26,7 +26,7 @@ const config: StorybookConfig = {
     name: '@storybook/react-vite',
     options: {
       builder: {
-        viteConfigPath: join(__dirname, '../vitest.config.ts'),
+        viteConfigPath: join(__dirname, '../vite.config.ts'),
       },
     },
   },
