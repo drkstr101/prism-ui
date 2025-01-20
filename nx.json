@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "nxCloudId": "674244deb35f3f021452dcfc",
+  "nxCloudId": "678dc7d4f0b496388736723d",
   "defaultBase": "starter",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
@@ -33,18 +33,8 @@
         "serveStaticTargetName": "serve-static"
       }
     },
-    {
-      "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "e2e"
-      }
-    },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
+    { "plugin": "@nx/playwright/plugin", "options": { "targetName": "e2e" } },
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
     {
       "plugin": "@nx/vite/plugin",
       "options": {
@@ -67,36 +57,23 @@
     }
   ],
   "targetDefaults": {
-    "e2e-ci--**/*": {
-      "dependsOn": ["^build"]
-    },
+    "e2e-ci--**/*": { "dependsOn": ["^build"] },
     "stylelint": {
       "inputs": ["default", "{workspaceRoot}/.stylelintrc(.(json|yml|yaml|js))?"],
       "cache": true
     }
   },
   "generators": {
-    "@nx/next": {
-      "application": {
-        "style": "tailwind",
-        "linter": "eslint"
-      }
-    },
+    "@nx/next": { "application": { "style": "tailwind", "linter": "eslint" } },
     "@nx/react": {
-      "library": {
-        "style": "tailwind",
-        "linter": "eslint",
-        "unitTestRunner": "none"
-      },
+      "library": { "style": "tailwind", "linter": "eslint", "unitTestRunner": "none" },
       "application": {
         "babel": true,
         "style": "tailwind",
         "linter": "eslint",
         "bundler": "vite"
       },
-      "component": {
-        "style": "tailwind"
-      }
+      "component": { "style": "tailwind" }
     },
     "@nx/web:application": {
       "style": "css",
