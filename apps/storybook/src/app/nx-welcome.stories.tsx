@@ -10,5 +10,7 @@ export const Composition: Story = {
 export default {
   title: 'apsphysics.prism/app/nx-welcome',
   component: NxWelcome,
-  args: {},
+  args: {
+    title: 'home',
+  },
 } satisfies Meta<typeof NxWelcome>;
