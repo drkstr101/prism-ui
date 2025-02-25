@@ -1,0 +1,89 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documentation, please see: https://bit.dev/reference/workspace/workspace-json
+ **/ {
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  /**
+   * main configuration of the Bit workspace.
+   **/
+  "teambit.workspace/workspace": {
+    /**
+     * the name of the component workspace. used for development purposes.
+     **/
+    "name": "prism",
+    /**
+     * set the icon to be shown on the Bit server.
+     **/
+    "icon": "https://static.bit.dev/brands/bit-logo-min.png",
+    /**
+     * default directory to place a component during `bit import` and `bit create`.
+     * the following placeholders are available:
+     * name - component name includes namespace, e.g. 'ui/button'.
+     * scopeId - full scope-id includes the owner, e.g. 'teambit.compilation'.
+     * scope - scope name only, e.g. 'compilation'.
+     * owner - owner name in bit.dev, e.g. 'teambit'.
+     **/
+    "defaultDirectory": "{scopeId}/{name}",
+    /**
+     * default scope for all components in workspace.
+     **/
+    "defaultScope": "prism.platform",
+    "resolveAspectsFromNodeModules": true,
+    "resolveEnvsFromRoots": true,
+  },
+  /**
+   * Enable generator templates by uncommenting the desired environments below.
+   * These generators scaffold components for Node, React, Vue, and Angular.
+   * After uncommenting, run `bit install` to make them available in your workspace.
+   * Explore more dev environments at: https://bit.dev/docs/getting-started/composing/dev-environments
+   **/
+  "teambit.generator/generator": {
+    "envs": [
+      "bitdev.react/react-env",
+      "bitdev.node/node-env",
+      "bitdev.symphony/envs/symphony-env",
+    ],
+  },
+  /**
+   * main configuration for component dependency resolution.
+   **/
+  "teambit.dependencies/dependency-resolver": {
+    "policy": {
+      "dependencies": {
+        "@bitdesign/sparks.actions.button": "^0.0.9",
+        "@bitdesign/sparks.content.card": "0.0.0-c1e54d7edc12c61bae033734b328f4998ea19e60",
+        "@bitdesign/sparks.content.logo": "^0.0.9",
+        "@bitdesign/sparks.layout.flex": "^0.0.6",
+        "@bitdesign/sparks.layout.header": "^0.0.10",
+        "@bitdesign/sparks.navigation.link": "^0.0.7",
+        "@bitdesign/sparks.sparks-theme": "^0.0.5",
+        "@bitdesign/sparks.typography.heading": "^0.0.6",
+        "@bitdesign/sparks.typography.text": "^0.0.6",
+        "@bitdev/harmony.harmony-platform": "^2.0.8",
+        "@bitdev/harmony.preview.slot-preview": "^0.0.3",
+        "@bitdev/harmony.runtimes.browser-runtime": "^0.0.49",
+        "@bitdev/harmony.runtimes.nodejs-runtime": "^1.0.76",
+        "@bitdev/node.node-env": "^3.0.0",
+        "@bitdev/react.react-env": "^3.0.0",
+        "@bitdev/symphony.aspects.header": "^1.0.10",
+        "@bitdev/symphony.backends.backend-server": "^0.0.14",
+        "@bitdev/symphony.deployers.kubernetes": "^1.0.11",
+        "@bitdev/symphony.envs.symphony-env": "^2.0.0",
+        "@bitdev/symphony.frontends.route": "^0.0.10",
+        "@bitdev/symphony.symphony-platform": "^1.0.12",
+        "bcryptjs": "^2.4.3",
+        "classnames": "^2.5.1",
+        "eslint": "^7.28.0",
+        "graphql-tag": "^2.12.6",
+      },
+      "peerDependencies": {},
+    },
+    "linkCoreAspects": true,
+    "rootComponents": true,
+    "packageManager": "teambit.dependencies/pnpm",
+  },
+  "teambit.workspace/workspace-config-files": {
+    "enableWorkspaceConfigWrite": true,
+  },
+  "prism.platform/prism": {},
+}
