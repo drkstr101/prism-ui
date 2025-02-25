@@ -22,5 +22,5 @@ tasks:
     openMode: split-left
   - name: Start
     init: gp sync-await setup
-    command: yarn start
+    command: yarn start:storybook
     openMode: split-right

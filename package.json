@@ -7,8 +7,9 @@
     "format": "prettier . --write",
     "setup": "echo TODO",
     "build": "nx run-many -t build",
-    "start": "nx run-many -t serve -p home",
+    "start": "nx run storybook:serve",
     "start:home": "nx run home:serve:development",
+    "start:storybook": "nx run storybook:serve",
     "prepare": "husky install",
     "e2e": "nx run screenplay:e2e --skip-nx-cache",
     "e2e:setup": "playwright install --with-deps"
